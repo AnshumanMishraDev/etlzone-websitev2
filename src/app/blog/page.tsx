@@ -1,11 +1,18 @@
-/* Blog page - displays LinkedIn post embeds. Add new post URLs to the posts array */
+/* Blog page - card layout with title, image, and "Read on LinkedIn" button */
 import ScrollReveal from "@/components/ScrollReveal";
 import FullFooter from "@/components/FullFooter";
-import LinkedInPost from "@/components/LinkedInPost";
 
 const posts = [
-  "https://www.linkedin.com/posts/etlzone-solutions_sapdatamigration-datamigration-s4hana-activity-7485914136917434368-AyLD",
-  "https://www.linkedin.com/posts/etlzone-solutions_sap-go-live-readiness-checklist-activity-7487718539697590272-2Rkg",
+  {
+    title: "SAP Data Migration Insights — Expert Perspectives for System Integrators",
+    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?fm=jpg&q=75&w=900&auto=format&fit=crop",
+    linkedinUrl: "https://www.linkedin.com/posts/etlzone-solutions_sapdatamigration-datamigration-s4hana-activity-7485914136917434368-AyLD",
+  },
+  {
+    title: "SAP Data Migration Insights — Expert Perspectives for System Integrators",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?fm=jpg&q=75&w=900&auto=format&fit=crop",
+    linkedinUrl: "https://www.linkedin.com/posts/etlzone-solutions_sap-go-live-readiness-checklist-activity-7487718539697590272-2Rkg",
+  },
 ];
 
 export default function BlogPage() {
@@ -14,21 +21,36 @@ export default function BlogPage() {
       <section className="hero-simple">
         <span className="eyebrow">Blog</span>
         <h1>SAP Migration Insights <span className="highlight">for Delivery Teams</span></h1>
-        <p className="sub">Practitioner-level notes on SAP data migration, S/4HANA conversion, and cutover planning — written for the people actually scoping and running these programs.</p>
+        <p className="sub">Practitioner-level notes on SAP data migration, S/4HANA conversion, and cutover planning.</p>
       </section>
 
       <section>
         <div className="container">
           <div className="section-head">
             <ScrollReveal>
-              <span className="section-eyebrow">Latest LinkedIn Posts</span>
+              <span className="section-eyebrow">Latest Posts</span>
               <h2>From the ETLZone Delivery Team</h2>
             </ScrollReveal>
           </div>
-          <div style={{ display: "flex", flexDirection: "column", gap: 32, alignItems: "center" }}>
-            {posts.map((url, i) => (
-              <ScrollReveal key={i}>
-                <LinkedInPost url={url} />
+
+          <div className="featured-grid">
+            {posts.map((post, i) => (
+              <ScrollReveal key={i} className="post-card">
+                <div className="post-img-wrap">
+                  <img src={post.image} alt={post.title} />
+                </div>
+                <div className="post-body">
+                  <h3>{post.title}</h3>
+                  <a
+                    href={post.linkedinUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="post-link"
+                    style={{ marginTop: "auto" }}
+                  >
+                    Read on LinkedIn →
+                  </a>
+                </div>
               </ScrollReveal>
             ))}
           </div>
@@ -41,11 +63,17 @@ export default function BlogPage() {
             <ScrollReveal>
               <span className="section-eyebrow">Follow Us</span>
               <h2>More on LinkedIn</h2>
-              <p>Follow ETLZone on LinkedIn for the latest SAP migration insights, company updates, and industry commentary.</p>
+              <p>Follow ETLZone on LinkedIn for the latest SAP migration insights and industry commentary.</p>
             </ScrollReveal>
           </div>
           <div style={{ textAlign: "center" }}>
-            <a href="https://linkedin.com/company/etlzone-solution" target="_blank" rel="noopener noreferrer" className="btn-primary" style={{ background: "#0a66c2" }}>
+            <a
+              href="https://linkedin.com/company/etlzone-solution"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary"
+              style={{ background: "#0a66c2" }}
+            >
               Follow us on LinkedIn →
             </a>
           </div>
@@ -55,7 +83,9 @@ export default function BlogPage() {
       <section className="closer">
         <ScrollReveal>
           <h2>Have a Migration Program You&apos;d Like Us to Write About?</h2>
-          <p style={{ color: "#dbe4ff", maxWidth: 600, margin: "0 auto 30px", position: "relative", fontSize: 15.5 }}>If there&apos;s a migration topic your team keeps running into, let us know — it might be our next article.</p>
+          <p style={{ color: "#dbe4ff", maxWidth: 600, margin: "0 auto 30px", position: "relative", fontSize: 15.5 }}>
+            If there&apos;s a migration topic your team keeps running into, let us know.
+          </p>
           <a href="/contact" className="btn-primary">Talk to Us</a>
         </ScrollReveal>
       </section>
