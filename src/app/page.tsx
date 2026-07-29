@@ -2,6 +2,7 @@
 import ScrollReveal from "@/components/ScrollReveal";
 import AnimatedCounter from "@/components/AnimatedCounter";
 import CTABanner from "@/components/CTABanner";
+import FullFooter from "@/components/FullFooter";
 
 export default function HomePage() {
   return (
@@ -163,6 +164,7 @@ export default function HomePage() {
       </section>
 
       <CTABanner />
+      <FullFooter />
     </>
   );
 }
