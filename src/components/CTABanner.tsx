@@ -1,6 +1,15 @@
+/* CTABanner - reusable call-to-action section for any page */
 import ScrollReveal from "./ScrollReveal";
 
-export default function CTABanner({ heading, linkText = "Schedule a Delivery Conversation", href = "/contact" }: { heading?: string; linkText?: string; href?: string }) {
+export default function CTABanner({
+  heading,
+  linkText = "Schedule a Delivery Conversation",
+  href = "/contact"
+}: {
+  heading?: string;
+  linkText?: string;
+  href?: string;
+}) {
   return (
     <section className="closer">
       <ScrollReveal>

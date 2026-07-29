@@ -1,3 +1,5 @@
+/* Contact form - submits to /api/contact which sends email via Resend */
+/* To enable: add RESEND_API_KEY to .env.local */
 "use client";
 import { useState, FormEvent } from "react";
 
@@ -83,7 +85,9 @@ export default function ContactForm() {
           <textarea id="message" name="message" placeholder="Tell us about the program — SAP version, object scope, timeline..." />
         </div>
         {error && <p style={{ color: "#c94b4b", fontSize: 14, marginBottom: 16 }}>{error}</p>}
-        <button type="submit" className="submit-btn" disabled={submitting}>{submitting ? "Sending..." : "Send Message"}</button>
+        <button type="submit" className="submit-btn" disabled={submitting}>
+          {submitting ? "Sending..." : "Send Message"}
+        </button>
         <p className="form-note">We typically respond within 1–2 business days.</p>
       </form>
     </div>

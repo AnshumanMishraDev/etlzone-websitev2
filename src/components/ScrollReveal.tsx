@@ -1,3 +1,4 @@
+/* ScrollReveal - animate elements into view on scroll */
 "use client";
 import { useEffect, useRef, ReactNode } from "react";
 
@@ -20,9 +21,5 @@ export default function ScrollReveal({ children, className = "" }: { children: R
     observer.observe(el);
     return () => observer.disconnect();
   }, []);
-  return (
-    <div ref={ref} className={`reveal ${className}`}>
-      {children}
-    </div>
-  );
+  return <div ref={ref} className={`reveal ${className}`}>{children}</div>;
 }

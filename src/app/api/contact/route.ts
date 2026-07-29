@@ -1,3 +1,5 @@
+/* API route for contact form - sends email via Resend */
+/* Requires RESEND_API_KEY in .env.local */
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
@@ -5,7 +7,10 @@ export async function POST(request: Request) {
   try {
     const apiKey = process.env.RESEND_API_KEY;
     if (!apiKey) {
-      return NextResponse.json({ error: "Email service not configured. Please email us directly at officials@etlzone.com." }, { status: 500 });
+      return NextResponse.json(
+        { error: "Email service not configured. Please email us directly at officials@etlzone.com." },
+        { status: 500 }
+      );
     }
 
     const resend = new Resend(apiKey);
@@ -15,30 +20,31 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
     }
 
-    const html = `
-      <h2>New Contact Form Submission</h2>
-      <table style="border-collapse:collapse;width:100%">
-        <tr><td style="padding:8px;font-weight:700;border:1px solid #ddd">Name</td><td style="padding:8px;border:1px solid #ddd">${fullname}</td></tr>
-        <tr><td style="padding:8px;font-weight:700;border:1px solid #ddd">Company</td><td style="padding:8px;border:1px solid #ddd">${company}</td></tr>
-        <tr><td style="padding:8px;font-weight:700;border:1px solid #ddd">Role</td><td style="padding:8px;border:1px solid #ddd">${role || "—"}</td></tr>
-        <tr><td style="padding:8px;font-weight:700;border:1px solid #ddd">Engagement Type</td><td style="padding:8px;border:1px solid #ddd">${engagement || "—"}</td></tr>
-        <tr><td style="padding:8px;font-weight:700;border:1px solid #ddd">Email</td><td style="padding:8px;border:1px solid #ddd">${email}</td></tr>
-      </table>
-      <h3>Message</h3>
-      <p>${message || "No message provided."}</p>
-    `;
-
     await resend.emails.send({
       from: "ETLZone Contact <onboarding@resend.dev>",
       to: ["officials@etlzone.com"],
       subject: `New Contact Form Submission from ${fullname} — ${company}`,
-      html,
+      html: `
+        <h2>New Contact Form Submission</h2>
+        <table style="border-collapse:collapse;width:100%">
+          <tr><td style="padding:8px;font-weight:700;border:1px solid #ddd">Name</td><td style="padding:8px;border:1px solid #ddd">${fullname}</td></tr>
+          <tr><td style="padding:8px;font-weight:700;border:1px solid #ddd">Company</td><td style="padding:8px;border:1px solid #ddd">${company}</td></tr>
+          <tr><td style="padding:8px;font-weight:700;border:1px solid #ddd">Role</td><td style="padding:8px;border:1px solid #ddd">${role || "—"}</td></tr>
+          <tr><td style="padding:8px;font-weight:700;border:1px solid #ddd">Engagement</td><td style="padding:8px;border:1px solid #ddd">${engagement || "—"}</td></tr>
+          <tr><td style="padding:8px;font-weight:700;border:1px solid #ddd">Email</td><td style="padding:8px;border:1px solid #ddd">${email}</td></tr>
+        </table>
+        <h3>Message</h3>
+        <p>${message || "No message provided."}</p>
+      `,
       replyTo: email,
     });
 
     return NextResponse.json({ success: true });
   } catch (error) {
     console.error("Contact form error:", error);
-    return NextResponse.json({ error: "Failed to send message. Please email us directly at officials@etlzone.com." }, { status: 500 });
+    return NextResponse.json(
+      { error: "Failed to send message. Please email us directly at officials@etlzone.com." },
+      { status: 500 }
+    );
   }
 }

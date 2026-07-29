@@ -1,13 +1,19 @@
+/* FullFooter - detailed footer with logo, links, and contact info */
 import Link from "next/link";
 
 export default function FullFooter() {
   return (
     <footer style={{ padding: "60px 24px 30px" }}>
       <div className="footer-grid">
+        {/* Brand column */}
         <div className="footer-col">
-          <div className="footer-logo"><img src="/etlzone-logo-v2.png" alt="ETLZone" style={{ height: 28, width: "auto" }} /></div>
+          <div className="footer-logo">
+            <img src="/etlzone-logo-v2.png" alt="ETLZone" style={{ height: 28, width: "auto" }} />
+          </div>
           <p>ETLZone Solutions LLP is a specialist SAP data migration delivery partner for System Integrators — ECC to S/4HANA migration, BODS, LTMC, IDoc handling, and cutover, delivered as a subcontract workstream.</p>
         </div>
+
+        {/* Company links */}
         <div className="footer-col">
           <h4>Company</h4>
           <ul>
@@ -18,6 +24,8 @@ export default function FullFooter() {
             <li><Link href="/contact">Contact</Link></li>
           </ul>
         </div>
+
+        {/* Service links */}
         <div className="footer-col">
           <h4>Services</h4>
           <ul>
@@ -29,6 +37,8 @@ export default function FullFooter() {
             <li><Link href="/services/migration-testing-cutover">Testing & Cutover</Link></li>
           </ul>
         </div>
+
+        {/* Contact info */}
         <div className="footer-col">
           <h4>Contact</h4>
           <ul>
@@ -39,6 +49,7 @@ export default function FullFooter() {
           </ul>
         </div>
       </div>
+
       <div className="footer-bottom">
         <span>&copy; 2026 ETLZone Solutions LLP. All rights reserved.</span>
         <span>SAP Data Migration Subcontract Delivery Partner for SIs</span>

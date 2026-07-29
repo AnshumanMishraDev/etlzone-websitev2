@@ -1,3 +1,4 @@
+/* Dynamic service detail page - renders content from src/data/services.ts based on slug */
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
@@ -6,6 +7,7 @@ import CTABanner from "@/components/CTABanner";
 import FullFooter from "@/components/FullFooter";
 import { services } from "@/data/services";
 
+/* Pre-generate all 6 service pages at build time */
 export async function generateStaticParams() {
   return services.map((s) => ({ slug: s.slug }));
 }
@@ -17,14 +19,16 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
 
   return (
     <>
+      {/* Breadcrumb */}
       <div className="breadcrumb">
         <Link href="/services">Services</Link> / {service.title}
       </div>
 
+      {/* Hero with image */}
       <div className="hero-grid no-header-gap">
         <div>
           <span className="eyebrow">{service.eyebrow}</span>
-          <h1 style={{ fontSize: "clamp(30px,4.2vw,46px)", fontWeight: 800, color: "var(--brand-blue-dark)", lineHeight: 1.18, letterSpacing: -1, marginBottom: 20 }}>
+          <h1 style={{ fontSize: "clamp(28px,4vw,44px)", fontWeight: 800, color: "var(--brand-blue-dark)", lineHeight: 1.18, letterSpacing: -1, marginBottom: 20 }}>
             {service.title}, <span className="highlight">{service.subtitle}</span>
           </h1>
           <p className="sub">{service.hero}</p>
@@ -44,6 +48,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
         NDA by default on every engagement
       </div>
 
+      {/* Overview / Includes */}
       <section className="bg-light">
         <div className="container">
           <div className="section-head">
@@ -57,16 +62,14 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
             {service.includes.map((item, i) => (
               <ScrollReveal key={i} className="included-card">
                 <div className="check-icon">✓</div>
-                <div>
-                  <h3>{item.title}</h3>
-                  <p>{item.desc}</p>
-                </div>
+                <div><h3>{item.title}</h3><p>{item.desc}</p></div>
               </ScrollReveal>
             ))}
           </div>
         </div>
       </section>
 
+      {/* Process steps */}
       <section>
         <div className="container">
           <div className="section-head">
@@ -79,10 +82,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
             {service.process.map((step, i) => (
               <ScrollReveal key={i} className="process-step">
                 <div className="process-num">{i + 1}</div>
-                <div>
-                  <h3>{step.title}</h3>
-                  <p>{step.desc}</p>
-                </div>
+                <div><h3>{step.title}</h3><p>{step.desc}</p></div>
               </ScrollReveal>
             ))}
           </div>
@@ -92,6 +92,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
         </div>
       </section>
 
+      {/* Mid-page CTA */}
       <section className="bg-light">
         <div className="container">
           <div className="mid-cta">
@@ -104,6 +105,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
         </div>
       </section>
 
+      {/* Related services */}
       <section>
         <div className="container">
           <div className="section-head">
@@ -124,6 +126,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
         </div>
       </section>
 
+      {/* FAQs */}
       {service.faqs.length > 0 && (
         <section className="bg-light">
           <div className="container">
@@ -131,7 +134,6 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
               <ScrollReveal>
                 <span className="section-eyebrow">FAQs</span>
                 <h2>Common Questions About {service.title}</h2>
-                <p>Straight answers to what SIs and delivery teams typically ask before scoping a workstream.</p>
               </ScrollReveal>
             </div>
             <ScrollReveal>

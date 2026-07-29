@@ -1,3 +1,4 @@
+/* Blog page - displays LinkedIn post embeds. Add new post URLs to the posts array */
 import ScrollReveal from "@/components/ScrollReveal";
 import FullFooter from "@/components/FullFooter";
 import LinkedInPost from "@/components/LinkedInPost";

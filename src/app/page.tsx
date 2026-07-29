@@ -1,3 +1,4 @@
+/* Homepage - full landing page with all sections and scroll-to-section nav */
 import ScrollReveal from "@/components/ScrollReveal";
 import AnimatedCounter from "@/components/AnimatedCounter";
 import CTABanner from "@/components/CTABanner";
@@ -5,6 +6,7 @@ import CTABanner from "@/components/CTABanner";
 export default function HomePage() {
   return (
     <>
+      {/* Hero section */}
       <section className="hero-center">
         <span className="eyebrow">SAP Data Migration Specialists</span>
         <h1>SAP Data Migration. <span className="highlight">Subcontract Delivery for SIs.</span></h1>
@@ -15,6 +17,7 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Stats strip */}
       <section className="stats">
         <div className="stats-grid">
           <div className="stat-item">
@@ -36,6 +39,7 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Positioning - Who we work with */}
       <section className="positioning">
         <div className="container">
           <div className="section-head">
@@ -55,6 +59,7 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Services highlight (linked from #services hash) */}
       <section id="services">
         <div className="container">
           <div className="section-head">
@@ -65,26 +70,18 @@ export default function HomePage() {
             </ScrollReveal>
           </div>
           <div className="cards-grid">
-            <ScrollReveal className="service-card">
-              <div className="service-icon">⇄</div>
-              <h3>ECC to S/4HANA Migration</h3>
-              <p>Full-cycle SAP data migration planning and execution from ECC to S/4HANA — object scoping, mapping, load, and validation.</p>
-            </ScrollReveal>
-            <ScrollReveal className="service-card">
-              <div className="service-icon">⚙</div>
-              <h3>SAP BODS &amp; LTMC</h3>
-              <p>Extraction, transformation, and load workstreams using SAP BODS and LTMC/Migration Cockpit for S/4HANA-native migrations.</p>
-            </ScrollReveal>
-            <ScrollReveal className="service-card">
-              <div className="service-icon">🔗</div>
-              <h3>IDoc Handling &amp; Conversion</h3>
-              <p>Migration and validation of interface-dependent data, including IDoc structure conversion and integration testing.</p>
-            </ScrollReveal>
-            <ScrollReveal className="service-card">
-              <div className="service-icon">✓</div>
-              <h3>Cutover &amp; Reconciliation</h3>
-              <p>Mock load cycles, cutover rehearsal, and post-load reconciliation to de-risk your SAP go-live timeline.</p>
-            </ScrollReveal>
+            {[
+              { icon: "⇄", title: "ECC to S/4HANA Migration", desc: "Full-cycle SAP data migration planning and execution from ECC to S/4HANA — object scoping, mapping, load, and validation." },
+              { icon: "⚙", title: "SAP BODS &amp; LTMC", desc: "Extraction, transformation, and load workstreams using SAP BODS and LTMC/Migration Cockpit for S/4HANA-native migrations." },
+              { icon: "🔗", title: "IDoc Handling &amp; Conversion", desc: "Migration and validation of interface-dependent data, including IDoc structure conversion and integration testing." },
+              { icon: "✓", title: "Cutover &amp; Reconciliation", desc: "Mock load cycles, cutover rehearsal, and post-load reconciliation to de-risk your SAP go-live timeline." },
+            ].map((s, i) => (
+              <ScrollReveal key={i} className="service-card">
+                <div className="service-icon">{s.icon}</div>
+                <h3>{s.title}</h3>
+                <p>{s.desc}</p>
+              </ScrollReveal>
+            ))}
           </div>
           <div style={{ textAlign: "center", marginTop: 36 }}>
             <a href="/services" className="btn-secondary">View All Services →</a>
@@ -92,6 +89,7 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Why Us (linked from #why-us hash) */}
       <section id="why-us" className="why-us">
         <div className="container">
           <div className="section-head">
@@ -102,34 +100,20 @@ export default function HomePage() {
             </ScrollReveal>
           </div>
           <div className="why-grid">
-            <ScrollReveal className="why-card">
-              <div className="why-num">01</div>
-              <div>
-                <h3>Narrow Scope, Deep Depth</h3>
-                <p>We only do SAP data migration. No analytics, no app development, no general BI — so there&apos;s no scope creep and no competing priorities on your project timeline.</p>
-              </div>
-            </ScrollReveal>
-            <ScrollReveal className="why-card">
-              <div className="why-num">02</div>
-              <div>
-                <h3>Drop-In Delivery</h3>
-                <p>We work inside your PM tooling, your status cadence, your naming conventions. Your client sees your delivery, not ours.</p>
-              </div>
-            </ScrollReveal>
-            <ScrollReveal className="why-card">
-              <div className="why-num">03</div>
-              <div>
-                <h3>Surge Capacity Without Headcount Risk</h3>
-                <p>Bring us in for a migration phase, release us at go-live. No bench cost between engagements.</p>
-              </div>
-            </ScrollReveal>
-            <ScrollReveal className="why-card">
-              <div className="why-num">04</div>
-              <div>
-                <h3>NDA &amp; Confidentiality as Standard</h3>
-                <p>Confidentiality isn&apos;t a negotiation — it&apos;s the default posture for every SAP migration engagement we take on.</p>
-              </div>
-            </ScrollReveal>
+            {[
+              { num: "01", title: "Narrow Scope, Deep Depth", desc: "We only do SAP data migration. No analytics, no app development, no general BI — so there&apos;s no scope creep and no competing priorities on your project timeline." },
+              { num: "02", title: "Drop-In Delivery", desc: "We work inside your PM tooling, your status cadence, your naming conventions. Your client sees your delivery, not ours." },
+              { num: "03", title: "Surge Capacity Without Headcount Risk", desc: "Bring us in for a migration phase, release us at go-live. No bench cost between engagements." },
+              { num: "04", title: "NDA &amp; Confidentiality as Standard", desc: "Confidentiality isn&apos;t a negotiation — it&apos;s the default posture for every SAP migration engagement we take on." },
+            ].map((item, i) => (
+              <ScrollReveal key={i} className="why-card">
+                <div className="why-num">{item.num}</div>
+                <div>
+                  <h3>{item.title}</h3>
+                  <p>{item.desc}</p>
+                </div>
+              </ScrollReveal>
+            ))}
           </div>
           <div style={{ textAlign: "center", marginTop: 36 }}>
             <a href="/why-us" className="btn-secondary">Learn More About Why Us →</a>
@@ -137,6 +121,7 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Track Record (linked from #track-record hash) */}
       <section id="track-record">
         <div className="container">
           <ScrollReveal>
@@ -149,6 +134,7 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Engage models (linked from #engage hash) */}
       <section id="engage">
         <div className="container">
           <div className="section-head">
@@ -159,18 +145,16 @@ export default function HomePage() {
             </ScrollReveal>
           </div>
           <div className="engage-list">
-            <ScrollReveal className="engage-item">
-              <h3>Staff Augmentation</h3>
-              <p>Migration specialists staffed directly into your live SAP project team.</p>
-            </ScrollReveal>
-            <ScrollReveal className="engage-item">
-              <h3>Subcontracted Workstream</h3>
-              <p>Full ownership of a defined migration workstream, delivered under your program.</p>
-            </ScrollReveal>
-            <ScrollReveal className="engage-item">
-              <h3>Fixed-Scope Module Delivery</h3>
-              <p>A specific module delivered end-to-end — e.g., the BODS load layer only.</p>
-            </ScrollReveal>
+            {[
+              { title: "Staff Augmentation", desc: "Migration specialists staffed directly into your live SAP project team." },
+              { title: "Subcontracted Workstream", desc: "Full ownership of a defined migration workstream, delivered under your program." },
+              { title: "Fixed-Scope Module Delivery", desc: "A specific module delivered end-to-end — e.g., the BODS load layer only." },
+            ].map((item, i) => (
+              <ScrollReveal key={i} className="engage-item">
+                <h3>{item.title}</h3>
+                <p>{item.desc}</p>
+              </ScrollReveal>
+            ))}
           </div>
           <div style={{ textAlign: "center", marginTop: 24 }}>
             <a href="/partner" className="btn-secondary">See Full Engagement Models →</a>

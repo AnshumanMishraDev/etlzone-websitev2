@@ -1,3 +1,5 @@
+/* LinkedInPost - embeds a LinkedIn post via iframe */
+/* Extracts post ID from public LinkedIn URL and renders the embed */
 function extractPostId(url: string): string | null {
   const match = url.match(/activity[-:]\d+/);
   if (match) return match[0].replace("activity", "").replace("-", "").replace(":", "");
@@ -9,12 +11,11 @@ export default function LinkedInPost({ url }: { url: string }) {
   if (!postId) {
     return <p style={{ color: "var(--text-muted)", fontStyle: "italic" }}>Invalid LinkedIn post URL</p>;
   }
-  const embedUrl = `https://www.linkedin.com/embed/feed/update/urn:li:share:${postId}`;
   return (
     <div>
-      <div style={{ position: "relative", overflow: "hidden", borderRadius: 12, background: "#fff", boxShadow: "0 4px 16px rgba(15,23,42,0.05)", border: "1px solid rgba(20,80,224,0.06)", maxWidth: 550, margin: "0 auto" }}>
+      <div className="linkedin-post-wrapper">
         <iframe
-          src={embedUrl}
+          src={`https://www.linkedin.com/embed/feed/update/urn:li:share:${postId}`}
           width="100%"
           height={500}
           style={{ border: "none", display: "block" }}

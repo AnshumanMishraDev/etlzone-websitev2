@@ -1,3 +1,4 @@
+/* FAQ accordion component - pass items as { q, a } array */
 "use client";
 import { useState } from "react";
 

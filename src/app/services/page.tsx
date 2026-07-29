@@ -1,8 +1,9 @@
+/* Services overview page - lists all 6 service categories as tiles */
 import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
-import CTABanner from "@/components/CTABanner";
 import FullFooter from "@/components/FullFooter";
 
+/* Service list - add new services here */
 const serviceList = [
   { num: "01", title: "SAP Data Migration", desc: "End-to-end SAP data migration planning and execution across ECC and non-HANA SAP environments.", slug: "sap-data-migration" },
   { num: "02", title: "SAP S/4HANA Migration", desc: "Specialist ECC to S/4HANA migration execution, including LTMC/Migration Cockpit workstreams.", slug: "sap-s4hana-migration" },
@@ -46,6 +47,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      {/* CTA */}
       <section className="closer">
         <ScrollReveal>
           <h2>Need One Workstream or the Full Migration Lifecycle?</h2>

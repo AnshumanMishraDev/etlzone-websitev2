@@ -1,3 +1,4 @@
+/* AnimatedCounter - counts up from 0 to target value when scrolled into view */
 "use client";
 import { useEffect, useRef } from "react";
 
@@ -15,8 +16,7 @@ export default function AnimatedCounter({ value, suffix = "+" }: { value: number
             function update(now: number) {
               const progress = Math.min((now - startTime) / duration, 1);
               const eased = 1 - Math.pow(1 - progress, 3);
-              const current = Math.floor(eased * value);
-              el!.textContent = current.toLocaleString();
+              el!.textContent = Math.floor(eased * value).toLocaleString();
               if (progress < 1) requestAnimationFrame(update);
               else el!.textContent = value.toLocaleString() + suffix;
             }
