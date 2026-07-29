@@ -1,5 +1,7 @@
 /* API route for contact form - sends email via Resend */
-/* Requires RESEND_API_KEY in .env.local */
+/* Requires RESEND_API_KEY in Vercel env vars */
+/* Optional: set RESEND_FROM (defaults to onboarding@resend.dev) */
+/* Optional: set CONTACT_TO (defaults to officials@etlzone.com) */
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
@@ -20,9 +22,12 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
     }
 
+    const fromAddr = process.env.RESEND_FROM || "ETLZone Contact <onboarding@resend.dev>";
+    const toAddr = process.env.CONTACT_TO || "officials@etlzone.com";
+
     await resend.emails.send({
-      from: "ETLZone Contact <onboarding@resend.dev>",
-      to: ["officials@etlzone.com"],
+      from: fromAddr,
+      to: [toAddr],
       subject: `New Contact Form Submission from ${fullname} — ${company}`,
       html: `
         <h2>New Contact Form Submission</h2>
