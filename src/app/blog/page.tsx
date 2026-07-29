@@ -33,6 +33,10 @@ export default function BlogPage() {
 
       <section style={{ padding: "60px 24px" }}>
         <div className="container" style={{ maxWidth: 900 }}>
+          <div style={{ textAlign: "center", marginBottom: 36 }}>
+            <span className="section-eyebrow">Featured Articles</span>
+            <h2 style={{ fontSize: "clamp(22px,3vw,30px)", fontWeight: 800, color: "var(--brand-blue-dark)", letterSpacing: -0.8, marginBottom: 8 }}>From the ETLZone Delivery Team</h2>
+          </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: 24 }}>
             {posts.map((post, i) => (
               <ScrollReveal key={i}>

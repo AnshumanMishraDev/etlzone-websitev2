@@ -4,17 +4,39 @@ import AnimatedCounter from "@/components/AnimatedCounter";
 import CTABanner from "@/components/CTABanner";
 import FullFooter from "@/components/FullFooter";
 
+const serviceCards = [
+  { icon: "⇄", title: "SAP ECC to S/4HANA Migration", desc: "Full-cycle SAP ECC to S/4HANA migration services including system conversion, greenfield implementation strategy, and data migration cockpit setup for seamless transitions." },
+  { icon: "⚙", title: "SAP Data Migration & Cockpit", desc: "Expert configuration of SAP data migration cockpit, SAP BODS, and legacy data migration from legacy systems with proven data migration tools and structured methodology." },
+  { icon: "✦", title: "Data Cleansing & Conversion", desc: "SAP data conversion and cleansing for data quality assurance in S/4HANA. Data migration in SAP ABAP, HANA, and legacy system consolidation with precision validation." },
+  { icon: "↔", title: "SAP Data Mapping & Reconciliation", desc: "Comprehensive SAP data mapping, validation, and reconciliation services ensuring data integrity across ECC to S/4HANA migration with detailed data migration steps documentation." },
+  { icon: "▶", title: "Migration Testing & Cutover", desc: "End-to-end SAP data migration cutover planning, mock runs, and go-live support. Data migration testing across all workstreams with risk mitigation and cutover plan execution." },
+  { icon: "⬡", title: "SAP HANA Data Migration Services", desc: "Specialized SAP HANA migration and data migration in SAP BODS, SAP ADM implementation, and data migration from legacy systems to HANA infrastructure." },
+];
+
+const whyUsItems = [
+  { num: "01", title: "Narrow Scope, Deep Depth", desc: "We only do SAP data migration. No analytics, no app development, no general BI — so there&apos;s no scope creep and no competing priorities on your project timeline." },
+  { num: "02", title: "Drop-In Delivery", desc: "We work inside your PM tooling, your status cadence, your naming conventions. Your client sees your delivery, not ours." },
+  { num: "03", title: "Surge Capacity Without Headcount Risk", desc: "Bring us in for a migration phase, release us at go-live. No bench cost between engagements." },
+  { num: "04", title: "NDA &amp; Confidentiality as Standard", desc: "Confidentiality isn&apos;t a negotiation — it&apos;s the default posture for every SAP migration engagement we take on." },
+];
+
+const engageItems = [
+  { title: "Staff Augmentation", desc: "Migration specialists staffed directly into your live SAP project team." },
+  { title: "Subcontracted Workstream", desc: "Full ownership of a defined migration workstream, delivered under your program." },
+  { title: "Fixed-Scope Module Delivery", desc: "A specific module delivered end-to-end — e.g., the BODS load layer only." },
+];
+
 export default function HomePage() {
   return (
     <>
       {/* Hero section */}
       <section className="hero-center">
-        <span className="eyebrow">SAP Data Migration Specialists</span>
-        <h1>SAP Data Migration. <span className="highlight">Subcontract Delivery for SIs.</span></h1>
-        <p className="sub">ETLZone is a specialist SAP data migration delivery partner. We execute ECC to S/4HANA migrations, BODS and LTMC workstreams, IDoc conversion, and cutover reconciliation — under your brand, inside your delivery methodology, as an extension of your team.</p>
+        <span className="eyebrow">Trusted SAP Data Migration Partner</span>
+        <h1>SAP Data Migration Services</h1>
+        <p style={{ fontSize: "clamp(20px, 3vw, 28px)", fontWeight: 600, color: "var(--text-muted)", margin: "-12px auto 28px", letterSpacing: "-0.3px" }}>for Enterprises &amp; SAP Partners</p>
+        <p className="sub">ETLZone delivers specialist SAP Data Migration Services for SAP ECC to S/4HANA Migration projects, including SAP Migration Cockpit, SAP BODS, Data Conversion and Cutover Planning as an extension of your team.</p>
         <div className="hero-ctas">
           <a href="/contact" className="btn-primary">Talk to Us About a Project</a>
-          <a href="/services" className="btn-secondary">Explore Our Services →</a>
         </div>
       </section>
 
@@ -46,15 +68,14 @@ export default function HomePage() {
           <div className="section-head">
             <ScrollReveal>
               <span className="section-eyebrow">Our Positioning</span>
-              <h2>An SAP Data Migration Delivery Partner Built for System Integrators</h2>
-              <p>We&apos;re not a competitor for your client relationship — we&apos;re execution capacity for your delivery team.</p>
+              <h2>Migration Expertise You Can Rely On</h2>
+              <p>From planning to go-live, ETLZone supports SAP implementation with specialist SAP data migration expertise. We combine proven methodologies, technical excellence and strict data security practices to deliver accurate migrations on time and with confidence.</p>
             </ScrollReveal>
           </div>
           <ScrollReveal>
             <div className="positioning-box">
-              <h3>We don&apos;t sell directly to enterprises.</h3>
-              <p>We deliver SAP data migration workstreams for <strong>System Integrators and consulting firms</strong> who need certified execution capacity — for a specific project, a specific phase, or ongoing bench support.</p>
-              <p>If you&apos;re an SI scoping an <strong>S/4HANA migration program</strong> and need SAP migration specialists who can be staffed in, work under NDA, and hand off cleanly at go-live — that&apos;s the entire reason ETLZone exists.</p>
+              <h3>Built to Strengthen Your SAP Delivery Team</h3>
+              <p>We extend your SAP delivery team with certified migration specialists who work under your brand. Clean handoff at go-live, no scope creep.</p>
             </div>
           </ScrollReveal>
         </div>
@@ -65,18 +86,13 @@ export default function HomePage() {
         <div className="container">
           <div className="section-head">
             <ScrollReveal>
-              <span className="section-eyebrow">SAP Migration Services</span>
-              <h2>SAP Data Migration Services for S/4HANA Delivery Programs</h2>
-              <p>Focused, specialist SAP data migration workstreams your team can plug directly into an existing program.</p>
+              <span className="section-eyebrow">Our SAP Migration Services</span>
+              <h2>Specialist SAP Data Migration Services</h2>
+              <p>Specialist SAP data migration services that integrate seamlessly with your implementation team.</p>
             </ScrollReveal>
           </div>
-          <div className="cards-grid">
-            {[
-              { icon: "⇄", title: "ECC to S/4HANA Migration", desc: "Full-cycle SAP data migration planning and execution from ECC to S/4HANA — object scoping, mapping, load, and validation." },
-              { icon: "⚙", title: "SAP BODS &amp; LTMC", desc: "Extraction, transformation, and load workstreams using SAP BODS and LTMC/Migration Cockpit for S/4HANA-native migrations." },
-              { icon: "🔗", title: "IDoc Handling &amp; Conversion", desc: "Migration and validation of interface-dependent data, including IDoc structure conversion and integration testing." },
-              { icon: "✓", title: "Cutover &amp; Reconciliation", desc: "Mock load cycles, cutover rehearsal, and post-load reconciliation to de-risk your SAP go-live timeline." },
-            ].map((s, i) => (
+          <div className="cards-grid" style={{ gridTemplateColumns: "repeat(3, 1fr)" }}>
+            {serviceCards.map((s, i) => (
               <ScrollReveal key={i} className="service-card">
                 <div className="service-icon">{s.icon}</div>
                 <h3>{s.title}</h3>
@@ -101,12 +117,7 @@ export default function HomePage() {
             </ScrollReveal>
           </div>
           <div className="why-grid">
-            {[
-              { num: "01", title: "Narrow Scope, Deep Depth", desc: "We only do SAP data migration. No analytics, no app development, no general BI — so there&apos;s no scope creep and no competing priorities on your project timeline." },
-              { num: "02", title: "Drop-In Delivery", desc: "We work inside your PM tooling, your status cadence, your naming conventions. Your client sees your delivery, not ours." },
-              { num: "03", title: "Surge Capacity Without Headcount Risk", desc: "Bring us in for a migration phase, release us at go-live. No bench cost between engagements." },
-              { num: "04", title: "NDA &amp; Confidentiality as Standard", desc: "Confidentiality isn&apos;t a negotiation — it&apos;s the default posture for every SAP migration engagement we take on." },
-            ].map((item, i) => (
+            {whyUsItems.map((item, i) => (
               <ScrollReveal key={i} className="why-card">
                 <div className="why-num">{item.num}</div>
                 <div>
@@ -127,9 +138,8 @@ export default function HomePage() {
         <div className="container">
           <ScrollReveal>
             <div className="track-record-card">
-              <h2>Proven SAP Data Migration Delivery Track Record</h2>
-              <p><span className="highlight-num">12+</span> end-to-end SAP data migrations delivered across ECC to S/4HANA programs.</p>
-              <p>Combined SAP delivery experience across the team, including backgrounds at Accenture and SLB.</p>
+              <h2>12+ S/4HANA migrations delivered. Zero failed go-lives</h2>
+              <p>Our team includes SAP-certified migration architects from tier-1 SIs. Every project on time, on budget with certified post-migration support.</p>
             </div>
           </ScrollReveal>
         </div>
@@ -146,11 +156,7 @@ export default function HomePage() {
             </ScrollReveal>
           </div>
           <div className="engage-list">
-            {[
-              { title: "Staff Augmentation", desc: "Migration specialists staffed directly into your live SAP project team." },
-              { title: "Subcontracted Workstream", desc: "Full ownership of a defined migration workstream, delivered under your program." },
-              { title: "Fixed-Scope Module Delivery", desc: "A specific module delivered end-to-end — e.g., the BODS load layer only." },
-            ].map((item, i) => (
+            {engageItems.map((item, i) => (
               <ScrollReveal key={i} className="engage-item">
                 <h3>{item.title}</h3>
                 <p>{item.desc}</p>
