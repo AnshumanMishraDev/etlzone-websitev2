@@ -75,6 +75,7 @@ export default function AboutPage() {
               </div>
             </ScrollReveal>
           </div>
+          <p className="exclusion-note">We made this call because SI partners don&apos;t need another generalist vendor — they need a migration specialist who shows up, owns the scoped workstream, and leaves no loose ends at go-live.</p>
         </div>
       </section>
 
@@ -143,7 +144,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <CTABanner heading="Ready to Discuss ETLZone as Your SAP Data Migration Partner?" linkText="Schedule a Conversation" href="mailto:officials@etlzone.com" />
+      <CTABanner heading="Ready to Discuss ETLZone as Your SAP Data Migration Partner?" subtext="Let&apos;s explore how we fit into your next SAP implementation program." linkText="Schedule a Conversation" href="mailto:officials@etlzone.com" />
       <FullFooter />
     </>
   );

@@ -102,6 +102,14 @@ export default function BlogPage() {
         </div>
       </section>
 
+      <section className="closer">
+        <ScrollReveal>
+          <h2>Have a Migration Program You&apos;d Like Us to Write About?</h2>
+          <p style={{ color: "#dbe4ff", maxWidth: 600, margin: "0 auto 30px", position: "relative", fontSize: 15.5 }}>If there&apos;s a migration topic your team keeps running into, let us know — it might be our next article.</p>
+          <a href="/contact" className="btn-primary">Contact us →</a>
+        </ScrollReveal>
+      </section>
+
       <FullFooter />
     </>
   );

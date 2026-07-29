@@ -32,8 +32,7 @@ export default function HomePage() {
       {/* Hero section */}
       <section className="hero-center">
         <span className="eyebrow">Trusted SAP Data Migration Partner</span>
-        <h1>SAP Data Migration Services</h1>
-        <p style={{ fontSize: "clamp(20px, 3vw, 28px)", fontWeight: 600, color: "var(--text-muted)", margin: "-12px auto 28px", letterSpacing: "-0.3px" }}>for Enterprises &amp; SAP Partners</p>
+        <h1>SAP Data Migration Services <span className="highlight">for Enterprises &amp; SAP Partners</span></h1>
         <p className="sub">ETLZone delivers specialist SAP Data Migration Services for SAP ECC to S/4HANA Migration projects, including SAP Migration Cockpit, SAP BODS, Data Conversion and Cutover Planning as an extension of your team.</p>
         <div className="hero-ctas">
           <a href="/contact" className="btn-primary">Talk to Us About a Project</a>

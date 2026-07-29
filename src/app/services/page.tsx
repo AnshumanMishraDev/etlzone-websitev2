@@ -5,12 +5,12 @@ import FullFooter from "@/components/FullFooter";
 
 /* Service list - add new services here */
 const serviceList = [
-  { num: "01", title: "SAP Data Migration", desc: "End-to-end SAP data migration planning and execution across ECC and non-HANA SAP environments.", slug: "sap-data-migration" },
-  { num: "02", title: "SAP S/4HANA Migration", desc: "Specialist ECC to S/4HANA migration execution, including LTMC/Migration Cockpit workstreams.", slug: "sap-s4hana-migration" },
-  { num: "03", title: "Data Cleaning", desc: "Source data cleansing and standardization before load, so migration errors get caught early.", slug: "data-cleaning" },
-  { num: "04", title: "Data Mapping", desc: "Source-to-target field mapping across SAP objects, aligned to your target data model.", slug: "data-mapping" },
-  { num: "05", title: "Data Validation & Reconciliation", desc: "Post-load validation and source-to-target reconciliation to confirm migration accuracy.", slug: "data-validation-reconciliation" },
-  { num: "06", title: "Migration Testing & Cutover", desc: "Mock load cycles, cutover rehearsal, and go-live execution support for SAP migration programs.", slug: "migration-testing-cutover" },
+  { num: "01", title: "SAP Data Migration", desc: "End-to-end SAP data migration planning and execution across ECC and non-HANA SAP environments.", slug: "sap-data-migration", img: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?fm=jpg&q=70&w=900&auto=format&fit=crop" },
+  { num: "02", title: "SAP S/4HANA Migration", desc: "Specialist ECC to S/4HANA migration execution, including LTMC/Migration Cockpit workstreams.", slug: "sap-s4hana-migration", img: "https://images.unsplash.com/photo-1758873268998-2f77c2d38862?fm=jpg&q=70&w=900&auto=format&fit=crop" },
+  { num: "03", title: "Data Cleaning", desc: "Source data cleansing and standardization before load, so migration errors get caught early.", slug: "data-cleaning", img: "https://images.unsplash.com/photo-1754039984985-ef607d80113a?fm=jpg&q=70&w=900&auto=format&fit=crop" },
+  { num: "04", title: "Data Mapping", desc: "Source-to-target field mapping across SAP objects, aligned to your target data model.", slug: "data-mapping", img: "https://images.unsplash.com/photo-1532622785990-d2c36a76f5a6?fm=jpg&q=70&w=900&auto=format&fit=crop" },
+  { num: "05", title: "Data Validation & Reconciliation", desc: "Post-load validation and source-to-target reconciliation to confirm migration accuracy.", slug: "data-validation-reconciliation", img: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?fm=jpg&q=70&w=900&auto=format&fit=crop" },
+  { num: "06", title: "Migration Testing & Cutover", desc: "Mock load cycles, cutover rehearsal, and go-live execution support for SAP migration programs.", slug: "migration-testing-cutover", img: "https://images.unsplash.com/photo-1614642237208-a17ea4a90221?fm=jpg&q=70&w=900&auto=format&fit=crop" },
 ];
 
 export default function ServicesPage() {
@@ -34,7 +34,7 @@ export default function ServicesPage() {
           <div className="service-grid">
             {serviceList.map((s) => (
               <ScrollReveal key={s.slug} className="service-tile">
-                <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?fm=jpg&q=70&w=900&auto=format&fit=crop" alt={s.title} />
+                <img src={s.img} alt={s.title} />
                 <div className="tile-body">
                   <span className="tile-num">{s.num}</span>
                   <h3>{s.title}</h3>

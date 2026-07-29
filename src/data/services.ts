@@ -13,6 +13,8 @@ export interface Service {
   process: { title: string; desc: string }[];
   related: { title: string; desc: string; slug: string }[];
   faqs: { q: string; a: string }[];
+  pathGrid?: { eyebrow: string; cards: { title: string; desc: string }[] };
+  riskCallout?: { icon: string; text: string };
 }
 
 export const services: Service[] = [
@@ -88,6 +90,13 @@ export const services: Service[] = [
       { q: "What is Business Partner conversion in S/4HANA?", a: "S/4HANA requires customer and vendor master records to be converted into a unified Business Partner model, replacing the separate customer and vendor master objects used in ECC." },
       { q: "Does ETLZone use LTMC or SAP BODS for S/4HANA migrations?", a: "We typically use LTMC (Migration Cockpit) for S/4HANA-native, template-driven object migration. SAP BODS remains relevant for complex transformation logic or non-standard objects." },
     ],
+    pathGrid: {
+      eyebrow: "Migration Path",
+      cards: [
+        { title: "Brownfield (System Conversion)", desc: "Existing ECC data and configuration carry forward, converted in place. Our focus is Simplification List remediation, Business Partner conversion, and Universal Journal alignment on existing data." },
+        { title: "Greenfield / Selective Data Transition", desc: "A fresh S/4HANA build with data migrated in, either fully or selectively by object. Our focus shifts to object scoping, mapping, and load into a clean target structure." },
+      ],
+    },
   },
   {
     slug: "data-cleaning",
@@ -124,6 +133,10 @@ export const services: Service[] = [
       { q: "Can data cleaning be delivered as a standalone workstream?", a: "Yes. ETLZone can run data cleansing as a standalone engagement ahead of a broader SAP migration program, or as the first phase of a full end-to-end migration workstream." },
       { q: "How does ETLZone track changes made during data cleansing?", a: "Cleansing rules are documented and signed off before execution. Every correction is applied with an audit trail, so changes remain traceable for compliance and sign-off purposes." },
     ],
+    riskCallout: {
+      icon: "⚠",
+      text: "Dirty data is the #1 cause of migration timeline slippage — not scope, not tooling, not resourcing. Catching data quality issues at the cleansing stage is far cheaper than catching them during a failed mock load, or worse, during cutover weekend.",
+    },
   },
   {
     slug: "data-mapping",

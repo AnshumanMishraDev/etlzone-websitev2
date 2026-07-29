@@ -6,6 +6,23 @@ import ContactForm from "./ContactForm";
 export default function ContactPage() {
   return (
     <>
+      {/* JSON-LD structured data for SEO */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ProfessionalService",
+            name: "ETLZone Solutions LLP",
+            description: "Specialist SAP data migration delivery partner for System Integrators, covering ECC to S/4HANA migration, BODS, LTMC, IDoc handling and cutover.",
+            email: "officials@etlzone.com",
+            telephone: "+91-98678-70005",
+            address: { "@type": "PostalAddress", streetAddress: "Kandivali (W)", addressLocality: "Mumbai", addressRegion: "Maharashtra", addressCountry: "IN" },
+            areaServed: "Worldwide",
+            url: "https://etlzone.com/contact.html",
+          }),
+        }}
+      />
       <div className="hero-grid">
         <div>
           <span className="eyebrow">Contact Us</span>

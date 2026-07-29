@@ -69,6 +69,46 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
         </div>
       </section>
 
+      {/* Risk callout - only shown on Data Cleaning page */}
+      {service.riskCallout && (
+        <section>
+          <div className="container">
+            <ScrollReveal>
+              <div className="risk-callout">
+                <div className="risk-icon">{service.riskCallout.icon}</div>
+                <p><strong>Dirty data is the #1 cause of migration timeline slippage</strong> — not scope, not tooling, not resourcing. Catching data quality issues at the cleansing stage is far cheaper than catching them during a failed mock load, or worse, during cutover weekend.</p>
+              </div>
+            </ScrollReveal>
+          </div>
+        </section>
+      )}
+
+      {/* Migration path grid - only shown on S/4HANA Migration page */}
+      {service.pathGrid && (
+        <section>
+          <div className="container">
+            <div className="section-head">
+              <ScrollReveal>
+                <span className="section-eyebrow">{service.pathGrid.eyebrow}</span>
+                <h2>Brownfield or Greenfield — We Scope to Your Approach</h2>
+                <p>The right migration path changes what data work is required. We adapt our workstream to whichever your program has already committed to.</p>
+              </ScrollReveal>
+            </div>
+            <div className="path-grid">
+              {service.pathGrid.cards.map((card, i) => (
+                <ScrollReveal key={i} className="path-card">
+                  <h3>{card.title}</h3>
+                  <p>{card.desc}</p>
+                </ScrollReveal>
+              ))}
+            </div>
+            <div className="inline-cta">
+              <p>Not sure which path fits your program? <a href="/contact">Talk to us and we&apos;ll help you decide →</a></p>
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Process steps */}
       <section>
         <div className="container">
