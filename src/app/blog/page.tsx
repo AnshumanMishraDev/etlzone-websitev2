@@ -98,7 +98,7 @@ export default function BlogPage() {
         <div className="container" style={{ textAlign: "center", maxWidth: 500 }}>
           <h2 style={{ fontSize: 18, fontWeight: 700, color: "var(--brand-blue-dark)", marginBottom: 6 }}>Follow Us on LinkedIn</h2>
           <p style={{ color: "var(--text-muted)", fontSize: 14, marginBottom: 20 }}>Stay updated with the latest SAP migration insights.</p>
-          <a href="https://linkedin.com/company/etlzone-solution" target="_blank" rel="noopener noreferrer" className="btn-primary" style={{ background: "#0a66c2", padding: "10px 20px", fontSize: 13 }}>Follow us on LinkedIn →</a>
+          <a href="https://www.linkedin.com/company/etlzone-solutions" target="_blank" rel="noopener noreferrer" className="btn-primary" style={{ background: "#0a66c2", padding: "10px 20px", fontSize: 13 }}>Follow us on LinkedIn →</a>
         </div>
       </section>
 

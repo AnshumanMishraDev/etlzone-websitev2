@@ -43,7 +43,7 @@ export default function FullFooter() {
             <li><a href="mailto:officials@etlzone.com">officials@etlzone.com</a></li>
             <li><a href="tel:+919867870005">+91 98678 70005</a></li>
             <li>Kandivali (W), Mumbai, India</li>
-            <li><a href="https://linkedin.com/company/etlzone-solution" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://www.linkedin.com/company/etlzone-solutions" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
           </ul>
         </div>
       </div>
