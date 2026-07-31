@@ -8,7 +8,7 @@ export default function FullFooter() {
         {/* Brand column */}
         <div className="footer-col">
           <div className="footer-logo">ETL<span style={{ color: "var(--brand-yellow)" }}>ZONE</span></div>
-          <p>ETLZone Solutions LLP is a specialist SAP data migration delivery partner for System Integrators — ECC to S/4HANA migration, BODS, LTMC, IDoc handling, and cutover, delivered as a subcontract workstream.</p>
+          <p>Etlzone Solutions LLP is a specialist SAP data migration delivery partner for System Integrators — ECC to S/4HANA migration, BODS, LTMC, IDoc handling, and cutover, delivered as a subcontract workstream.</p>
         </div>
 
         {/* Company links */}
@@ -49,7 +49,7 @@ export default function FullFooter() {
       </div>
 
       <div className="footer-bottom">
-        <span>&copy; 2026 ETLZone Solutions LLP. All rights reserved.</span>
+        <span>&copy; 2026 Etlzone Solutions LLP. All rights reserved.</span>
         <span>SAP Data Migration Subcontract Delivery Partner for SIs</span>
       </div>
     </footer>
