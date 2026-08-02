@@ -1,7 +1,13 @@
 /* About page - company story, specialization, leadership */
+import type { Metadata } from "next";
 import ScrollReveal from "@/components/ScrollReveal";
 import CTABanner from "@/components/CTABanner";
 import FullFooter from "@/components/FullFooter";
+
+export const metadata: Metadata = {
+  title: "About Us",
+  description: "ETLZone Solutions LLP is a Mumbai-based SAP data migration services partner specializing in ECC to S/4HANA migrations, SAP BODS, and data migration cockpit configuration.",
+};
 
 export default function AboutPage() {
   return (

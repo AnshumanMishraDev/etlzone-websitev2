@@ -1,4 +1,5 @@
 /* Dynamic service detail page - renders content from src/data/services.ts based on slug */
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
@@ -10,6 +11,17 @@ import { services } from "@/data/services";
 /* Pre-generate all 6 service pages at build time */
 export async function generateStaticParams() {
   return services.map((s) => ({ slug: s.slug }));
+}
+
+/* Dynamic SEO metadata per service */
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const service = services.find((s) => s.slug === slug);
+  if (!service) return {};
+  return {
+    title: service.title,
+    description: service.description,
+  };
 }
 
 export default async function ServicePage({ params }: { params: Promise<{ slug: string }> }) {

@@ -1,7 +1,13 @@
 /* Results page - track record, testimonials, engagement snapshots */
+import type { Metadata } from "next";
 import ScrollReveal from "@/components/ScrollReveal";
 import CTABanner from "@/components/CTABanner";
 import FullFooter from "@/components/FullFooter";
+
+export const metadata: Metadata = {
+  title: "Results & Track Record",
+  description: "ETLZone's track record delivering SAP data migration and S/4HANA conversion programs for System Integrators — 12+ migrations delivered with zero failed go-lives.",
+};
 
 export default function ResultsPage() {
   return (

@@ -1,7 +1,13 @@
 /* Partner page - engagement models comparison */
+import type { Metadata } from "next";
 import ScrollReveal from "@/components/ScrollReveal";
 import CTABanner from "@/components/CTABanner";
 import FullFooter from "@/components/FullFooter";
+
+export const metadata: Metadata = {
+  title: "Partner With Us",
+  description: "Flexible SAP data migration engagement models for System Integrators — staff augmentation, subcontracted workstreams, and fixed-scope module delivery.",
+};
 
 const models = [
   {

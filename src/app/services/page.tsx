@@ -1,7 +1,13 @@
 /* Services overview page - lists all 6 service categories as tiles */
+import type { Metadata } from "next";
 import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
 import FullFooter from "@/components/FullFooter";
+
+export const metadata: Metadata = {
+  title: "Our Services",
+  description: "Specialist SAP data migration services for System Integrators: SAP ECC to S/4HANA migration, data cleansing, data mapping, validation & reconciliation, testing & cutover.",
+};
 
 /* Service list - add new services here */
 const serviceList = [

@@ -1,7 +1,13 @@
 /* Why Us page - detailed reasons SIs choose ETLZone */
+import type { Metadata } from "next";
 import ScrollReveal from "@/components/ScrollReveal";
 import CTABanner from "@/components/CTABanner";
 import FullFooter from "@/components/FullFooter";
+
+export const metadata: Metadata = {
+  title: "Why Choose ETLZone",
+  description: "Why System Integrators bring ETLZone into their SAP migration programs — narrow scope, drop-in delivery, surge capacity, and NDA confidentiality as standard.",
+};
 
 export default function WhyUsPage() {
   return (

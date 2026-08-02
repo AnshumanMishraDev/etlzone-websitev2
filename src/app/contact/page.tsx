@@ -1,7 +1,13 @@
 /* Contact page - info card + contact form with Resend API integration */
+import type { Metadata } from "next";
 import ScrollReveal from "@/components/ScrollReveal";
 import FullFooter from "@/components/FullFooter";
 import ContactForm from "./ContactForm";
+
+export const metadata: Metadata = {
+  title: "Contact Us",
+  description: "Get in touch with ETLZone Solutions LLP to scope an SAP data migration workstream — staff augmentation, subcontracted delivery, or fixed-scope module support.",
+};
 
 export default function ContactPage() {
   return (
