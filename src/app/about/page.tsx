@@ -6,7 +6,7 @@ import FullFooter from "@/components/FullFooter";
 
 export const metadata: Metadata = {
   title: "About Us",
-  description: "ETLZone Solutions LLP is a Mumbai-based SAP data migration services partner specializing in ECC to S/4HANA migrations, SAP BODS, and data migration cockpit configuration.",
+  description: "Etlzone Solutions LLP is a Mumbai-based SAP data migration services partner specializing in ECC to S/4HANA migrations, SAP BODS, and data migration cockpit configuration.",
 };
 
 export default function AboutPage() {
@@ -14,14 +14,14 @@ export default function AboutPage() {
     <>
       <div className="hero-grid">
         <div>
-          <span className="eyebrow">About ETLZone</span>
+          <span className="eyebrow">About Etlzone</span>
           <h1 style={{ fontSize: "clamp(28px,4vw,44px)", fontWeight: 800, color: "var(--brand-blue-dark)", lineHeight: 1.18, letterSpacing: -1, marginBottom: 20 }}>
             A Specialist SAP Data Migration Firm, <span className="highlight">Built to Deliver Under Your Brand</span>
           </h1>
-          <p className="sub">ETLZone Solutions LLP is a Mumbai-based SAP data migration services partner specializing in ECC to S/4HANA migrations and SAP BODS implementation. We work exclusively as a subcontract and staffing partner to SAP System Integrators and implementation consulting firms.</p>
+          <p className="sub">Etlzone Solutions LLP is a Mumbai-based SAP data migration services partner specializing in ECC to S/4HANA migrations and SAP BODS implementation. We work exclusively as a subcontract and staffing partner to SAP System Integrators and implementation consulting firms.</p>
         </div>
         <div className="hero-img-wrap">
-          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?fm=jpg&q=75&w=1200&auto=format&fit=crop" alt="ETLZone team collaborating" />
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?fm=jpg&q=75&w=1200&auto=format&fit=crop" alt="Etlzone team collaborating" />
         </div>
       </div>
 
@@ -36,7 +36,7 @@ export default function AboutPage() {
           </div>
           <ScrollReveal>
             <div className="intro-box">
-              <p><strong>ETLZone Solutions LLP</strong> is a Mumbai-based SAP data migration services partner specializing in ECC to S/4HANA migrations, SAP BODS, and data migration cockpit configuration.</p>
+              <p><strong>Etlzone Solutions LLP</strong> is a Mumbai-based SAP data migration services partner specializing in ECC to S/4HANA migrations, SAP BODS, and data migration cockpit configuration.</p>
               <p>We work exclusively as a subcontract and staffing partner to SAP System Integrators — we don&apos;t compete for direct enterprise relationships or white-label our brand into your client engagements. Our <strong>50+ SAP-certified specialists</strong> bring deep expertise in ECC to S/4HANA conversions, greenfield implementations, and complex data migrations.</p>
               <p>Based in Mumbai with UTC-friendly operations, we embed seamlessly into your programs with focused delivery and no competing priorities.</p>
             </div>
@@ -50,7 +50,7 @@ export default function AboutPage() {
           <div className="section-head">
             <ScrollReveal>
               <span className="section-eyebrow">Our Specialization</span>
-              <h2>Why ETLZone Went All-In on SAP Data Migration</h2>
+              <h2>Why Etlzone Went All-In on SAP Data Migration</h2>
               <p>We started as a broader data and analytics firm. We deliberately narrowed because depth beats breadth when your program&apos;s go-live is on the line.</p>
             </ScrollReveal>
           </div>
@@ -128,7 +128,7 @@ export default function AboutPage() {
                 <h3>Mohammed Samim Ansari</h3>
                 <span className="leader-role">Founder &amp; Principal SAP Migration Architect</span>
                 <p>Samim brings <strong>12+ years of SAP data migration delivery</strong> experience from Accenture and SLB, where he led end-to-end ECC to S/4HANA migration programs across manufacturing, pharma, and automotive sectors. At Accenture, he architected SAP BODS and SAP Migration Cockpit solutions for Global 500 companies, managing complex data conversions and greenfield implementations at scale.</p>
-                <p>Frustrated by the generalist approach at larger consulting firms, Samim founded ETLZone to focus on what he does best: uncompromised SAP data migration delivery for System Integrators who need specialist execution capacity without the overhead.</p>
+                <p>Frustrated by the generalist approach at larger consulting firms, Samim founded Etlzone to focus on what he does best: uncompromised SAP data migration delivery for System Integrators who need specialist execution capacity without the overhead.</p>
                 <div className="leader-tags">
                   {["Ex-Accenture", "Ex-SLB", "SAP Certified", "SAP Data Migration", "ECC to S/4HANA Architect"].map((tag, i) => (
                     <span key={i} className="leader-tag">{tag}</span>
@@ -150,7 +150,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <CTABanner heading="Ready to Discuss ETLZone as Your SAP Data Migration Partner?" subtext="Let&apos;s explore how we fit into your next SAP implementation program." linkText="Schedule a Conversation" href="mailto:officials@etlzone.com" />
+      <CTABanner heading="Ready to Discuss Etlzone as Your SAP Data Migration Partner?" subtext="Let&apos;s explore how we fit into your next SAP implementation program." linkText="Schedule a Conversation" href="mailto:officials@etlzone.com" />
       <FullFooter />
     </>
   );

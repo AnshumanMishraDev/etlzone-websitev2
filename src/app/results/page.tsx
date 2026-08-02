@@ -6,7 +6,7 @@ import FullFooter from "@/components/FullFooter";
 
 export const metadata: Metadata = {
   title: "Results & Track Record",
-  description: "ETLZone's track record delivering SAP data migration and S/4HANA conversion programs for System Integrators — 12+ migrations delivered with zero failed go-lives.",
+  description: "Etlzone's track record delivering SAP data migration and S/4HANA conversion programs for System Integrators — 12+ migrations delivered with zero failed go-lives.",
 };
 
 export default function ResultsPage() {
@@ -16,7 +16,7 @@ export default function ResultsPage() {
         <div>
           <span className="eyebrow">Results</span>
           <h1 style={{ fontSize: "clamp(28px,4vw,44px)", fontWeight: 800, color: "var(--brand-blue-dark)", lineHeight: 1.18, letterSpacing: -1, marginBottom: 20 }}>
-            What Happens When ETLZone <span className="highlight">Joins Your Migration Program</span>
+            What Happens When Etlzone <span className="highlight">Joins Your Migration Program</span>
           </h1>
           <p className="sub">Most of our engagements are confidential by contract, delivered under an SI&apos;s brand rather than our own.</p>
         </div>

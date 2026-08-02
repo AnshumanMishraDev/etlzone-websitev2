@@ -22,7 +22,7 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
     }
 
-    const fromAddr = process.env.RESEND_FROM || "ETLZone Contact <onboarding@resend.dev>";
+    const fromAddr = process.env.RESEND_FROM || "Etlzone Contact <onboarding@resend.dev>";
     const toAddr = process.env.CONTACT_TO || "cool.anshuman1112@gmail.com";
 
     await resend.emails.send({

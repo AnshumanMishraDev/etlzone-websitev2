@@ -33,7 +33,7 @@ export default function HomePage() {
       <section className="hero-center">
         <span className="eyebrow">Trusted SAP Data Migration Partner</span>
         <h1>SAP Data Migration Services <span className="highlight">for Enterprises &amp; SAP Partners</span></h1>
-        <p className="sub">ETLZone delivers specialist SAP Data Migration Services for SAP ECC to S/4HANA Migration projects, including SAP Migration Cockpit, SAP BODS, Data Conversion and Cutover Planning as an extension of your team.</p>
+        <p className="sub">Etlzone delivers specialist SAP Data Migration Services for SAP ECC to S/4HANA Migration projects, including SAP Migration Cockpit, SAP BODS, Data Conversion and Cutover Planning as an extension of your team.</p>
         <div className="hero-ctas">
           <a href="/contact" className="btn-primary">Talk to Us About a Project</a>
         </div>
@@ -68,7 +68,7 @@ export default function HomePage() {
             <ScrollReveal>
               <span className="section-eyebrow">Our Positioning</span>
               <h2>Migration Expertise You Can Rely On</h2>
-              <p>From planning to go-live, ETLZone supports SAP implementation with specialist SAP data migration expertise. We combine proven methodologies, technical excellence and strict data security practices to deliver accurate migrations on time and with confidence.</p>
+              <p>From planning to go-live, Etlzone supports SAP implementation with specialist SAP data migration expertise. We combine proven methodologies, technical excellence and strict data security practices to deliver accurate migrations on time and with confidence.</p>
             </ScrollReveal>
           </div>
           <ScrollReveal>
@@ -110,8 +110,8 @@ export default function HomePage() {
         <div className="container">
           <div className="section-head">
             <ScrollReveal>
-              <span className="section-eyebrow">Why SIs Choose ETLZone</span>
-              <h2>Why System Integrators Bring ETLZone Into Their SAP Migration Programs</h2>
+              <span className="section-eyebrow">Why SIs Choose Etlzone</span>
+              <h2>Why System Integrators Bring Etlzone Into Their SAP Migration Programs</h2>
               <p>A specialist SAP migration subcontractor built to reduce delivery risk, not add to it.</p>
             </ScrollReveal>
           </div>
@@ -151,7 +151,7 @@ export default function HomePage() {
             <ScrollReveal>
               <span className="section-eyebrow">How We Engage</span>
               <h2>Flexible SAP Migration Engagement Models for SI Partners</h2>
-              <p>Three ways SIs typically bring ETLZone into an SAP data migration program.</p>
+              <p>Three ways SIs typically bring Etlzone into an SAP data migration program.</p>
             </ScrollReveal>
           </div>
           <div className="engage-list">

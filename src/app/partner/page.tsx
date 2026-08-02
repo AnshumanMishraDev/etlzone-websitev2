@@ -36,7 +36,7 @@ const models = [
 const tableRows = [
   ["Duration", "Flexible (month-to-month)", "Defined phase (3-12 months)", "Fixed timeline (4-16 weeks)"],
   ["Cost Model", "Resource-based (T&M)", "Phase-based or milestone", "Fixed price"],
-  ["Risk Profile", "Shared with your team", "ETLZone owns delivery", "Fixed scope = predictable"],
+  ["Risk Profile", "Shared with your team", "Etlzone owns delivery", "Fixed scope = predictable"],
   ["Skill Transfer", "High (embedded team)", "Documented handoff", "Technical documentation"],
   ["Visibility", "Daily (your PMO)", "Your status cadence", "Milestone-based reporting"],
   ["Best For", "Surge capacity, learning", "Full offloading, risk mitigation", "Specialized tasks, budget certainty"],
@@ -44,7 +44,7 @@ const tableRows = [
 
 const scenarios = [
   { icon: "📋", question: "We need SAP migration specialists for 6 months but aren't sure on exact scope", answer: "Staff Augmentation. Flexible monthly billing, easy to scale up or down, your team maintains control. Ideal for exploratory phases or resource gaps." },
-  { icon: "🎯", question: "We want to offload the entire SAP data migration workstream — we're handling other WIPs", answer: "Subcontracted Workstream. ETLZone owns the phase from data mapping through cutover. You maintain client relationship. We deliver under your name, under your PM cadence, with your SLAs." },
+  { icon: "🎯", question: "We want to offload the entire SAP data migration workstream — we're handling other WIPs", answer: "Subcontracted Workstream. Etlzone owns the phase from data mapping through cutover. You maintain client relationship. We deliver under your name, under your PM cadence, with your SLAs." },
   { icon: "💰", question: "We need data reconciliation & validation only — fixed cost, fixed timeline", answer: "Fixed-Scope Module Delivery. Define the scope, agree on fee and timeline, get certified deliverables. No scope creep." },
   { icon: "🚀", question: "We're running a greenfield S/4HANA implementation and need SAP data migration cockpit expertise", answer: "Any of the three. Greenfield implementations often benefit from Staff Augmentation early (design phase) and Subcontracted Workstream later (build + cutover). We can blend models." },
   { icon: "📊", question: "We need SAP BODS configuration and migration testing only", answer: "Fixed-Scope Module Delivery. Define the scope, agree on SLAs, deliver turnkey. Minimal dependency on your other teams." },
@@ -66,7 +66,7 @@ export default function PartnerPage() {
         <div>
           <span className="eyebrow">Flexible Partnership Models</span>
           <h1 style={{ fontSize: "clamp(28px,4vw,44px)", fontWeight: 800, color: "var(--brand-blue-dark)", lineHeight: 1.18, letterSpacing: -1, marginBottom: 20 }}>
-            Three Ways to Engage <span className="highlight">ETLZone</span>
+            Three Ways to Engage <span className="highlight">Etlzone</span>
           </h1>
           <p className="sub">Choose the SAP data migration engagement model that fits your implementation program. From staff augmentation to full workstream delivery, we offer flexible SAP consulting services and partnership arrangements for System Integrators and enterprises.</p>
           <div className="hero-ctas">
@@ -85,7 +85,7 @@ export default function PartnerPage() {
             <ScrollReveal>
               <span className="section-eyebrow">Engagement Models</span>
               <h2>SAP Data Migration Services — Choose Your Partnership Model</h2>
-              <p>Whether you need flexible capacity, full workstream ownership, or fixed-scope delivery, ETLZone adapts to your S/4HANA migration program structure.</p>
+              <p>Whether you need flexible capacity, full workstream ownership, or fixed-scope delivery, Etlzone adapts to your S/4HANA migration program structure.</p>
             </ScrollReveal>
           </div>
           <div className="engagement-grid">

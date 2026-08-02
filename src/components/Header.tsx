@@ -59,7 +59,7 @@ export default function Header() {
     <header style={scrolled ? { background: "rgba(255,255,255,0.92)" } : undefined}>
       <nav>
         <Link href="/" className="logo">
-          <img src="/etlzone-logo-v2.png" alt="ETLZone" style={{ height: 32, width: "auto" }} />
+          <img src="/etlzone-logo-v2.png" alt="Etlzone" style={{ height: 32, width: "auto" }} />
         </Link>
 
         {/* Desktop nav */}

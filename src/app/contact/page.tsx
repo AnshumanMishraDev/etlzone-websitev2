@@ -6,7 +6,7 @@ import ContactForm from "./ContactForm";
 
 export const metadata: Metadata = {
   title: "Contact Us",
-  description: "Get in touch with ETLZone Solutions LLP to scope an SAP data migration workstream — staff augmentation, subcontracted delivery, or fixed-scope module support.",
+  description: "Get in touch with Etlzone Solutions LLP to scope an SAP data migration workstream — staff augmentation, subcontracted delivery, or fixed-scope module support.",
 };
 
 export default function ContactPage() {
@@ -19,7 +19,7 @@ export default function ContactPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "ProfessionalService",
-            name: "ETLZone Solutions LLP",
+            name: "Etlzone Solutions LLP",
             description: "Specialist SAP data migration delivery partner for System Integrators, covering ECC to S/4HANA migration, BODS, LTMC, IDoc handling and cutover.",
             email: "officials@etlzone.com",
             telephone: "+91-98678-70005",
@@ -35,7 +35,7 @@ export default function ContactPage() {
           <h1 style={{ fontSize: "clamp(28px,4vw,44px)", fontWeight: 800, color: "var(--brand-blue-dark)", lineHeight: 1.18, letterSpacing: -1, marginBottom: 20 }}>
             Scoping an SAP Migration Program? <span className="highlight">Let&apos;s Talk.</span>
           </h1>
-          <p className="sub" style={{ marginBottom: 0 }}>Tell us the object scope, timeline, and where you need delivery support — we&apos;ll get back to you with how ETLZone would plug in.</p>
+          <p className="sub" style={{ marginBottom: 0 }}>Tell us the object scope, timeline, and where you need delivery support — we&apos;ll get back to you with how Etlzone would plug in.</p>
         </div>
         <div className="hero-img-wrap">
           <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?fm=jpg&q=75&w=1200&auto=format&fit=crop" alt="Business meeting" />
@@ -47,7 +47,7 @@ export default function ContactPage() {
           <ScrollReveal>
             <div className="info-card" style={{ padding: 40, background: "var(--bg-light)", borderRadius: "var(--radius-xl)" }}>
               <h2 style={{ fontSize: 22, fontWeight: 800, color: "var(--brand-blue-dark)", marginBottom: 12 }}>Contact Our SAP Data Migration Team</h2>
-              <p style={{ color: "var(--text-muted)", fontSize: 14.5, marginBottom: 32 }}>ETLZone Solutions LLP is based in Mumbai and delivers SAP data migration workstreams for System Integrators worldwide. Reach us directly, or use the form to start scoping a workstream.</p>
+              <p style={{ color: "var(--text-muted)", fontSize: 14.5, marginBottom: 32 }}>Etlzone Solutions LLP is based in Mumbai and delivers SAP data migration workstreams for System Integrators worldwide. Reach us directly, or use the form to start scoping a workstream.</p>
               {[
                 { icon: "✉", label: "Email", value: "officials@etlzone.com", href: "mailto:officials@etlzone.com" },
                 { icon: "☎", label: "Phone", value: "+91 98678 70005", href: "tel:+919867870005" },

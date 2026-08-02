@@ -49,9 +49,9 @@ export const services: Service[] = [
     faqs: [
       { q: "What is SAP data migration?", a: "SAP data migration is the structured process of moving master and transactional data from a source SAP or legacy system into a target SAP environment. It includes object scoping, extraction, transformation, load execution, and post-load validation to ensure the data is complete and accurate in the new system." },
       { q: "How long does a typical SAP data migration project take?", a: "Timelines vary based on object count, data volume, and system complexity. A single-object workstream can run a few weeks, while a full end-to-end migration across multiple objects typically spans several months when planned alongside a broader SAP implementation program." },
-      { q: "Can ETLZone work as a subcontractor under our SI brand?", a: "Yes. ETLZone delivers exclusively as a subcontract and staffing partner to System Integrators. We work under NDA by default, follow your existing delivery methodology and reporting cadence, and do not present our own brand to your end client." },
+      { q: "Can Etlzone work as a subcontractor under our SI brand?", a: "Yes. Etlzone delivers exclusively as a subcontract and staffing partner to System Integrators. We work under NDA by default, follow your existing delivery methodology and reporting cadence, and do not present our own brand to your end client." },
       { q: "What data objects are typically included in an SAP migration?", a: "Common objects include vendor master, customer master, material master, open items, fixed assets, and other core master and transactional data." },
-      { q: "Does ETLZone handle both ECC and S/4HANA migrations?", a: "Yes. This covers general SAP data migration across ECC and other SAP versions. For S/4HANA-specific conversion work, ETLZone offers a dedicated S/4HANA migration service." },
+      { q: "Does Etlzone handle both ECC and S/4HANA migrations?", a: "Yes. This covers general SAP data migration across ECC and other SAP versions. For S/4HANA-specific conversion work, Etlzone offers a dedicated S/4HANA migration service." },
       { q: "How do you validate that migrated data is accurate?", a: "We run post-load validation and source-to-target reconciliation on every object in scope, comparing record counts and field-level values against the original source before an object is marked migration-ready." },
     ],
   },
@@ -88,7 +88,7 @@ export const services: Service[] = [
       { q: "What is the SAP Simplification List and why does it matter?", a: "The Simplification List is SAP's documentation of every functional and technical change introduced in S/4HANA compared to ECC. It matters because custom objects, transactions, and data structures affected by these changes need to be identified and remediated before conversion." },
       { q: "Should we choose a brownfield or greenfield S/4HANA migration path?", a: "Brownfield (system conversion) carries forward existing ECC data and configuration. Greenfield involves a fresh S/4HANA build with data migrated in. The right choice depends on data quality, customization complexity, and program timeline." },
       { q: "What is Business Partner conversion in S/4HANA?", a: "S/4HANA requires customer and vendor master records to be converted into a unified Business Partner model, replacing the separate customer and vendor master objects used in ECC." },
-      { q: "Does ETLZone use LTMC or SAP BODS for S/4HANA migrations?", a: "We typically use LTMC (Migration Cockpit) for S/4HANA-native, template-driven object migration. SAP BODS remains relevant for complex transformation logic or non-standard objects." },
+      { q: "Does Etlzone use LTMC or SAP BODS for S/4HANA migrations?", a: "We typically use LTMC (Migration Cockpit) for S/4HANA-native, template-driven object migration. SAP BODS remains relevant for complex transformation logic or non-standard objects." },
     ],
     pathGrid: {
       eyebrow: "Migration Path",
@@ -129,9 +129,9 @@ export const services: Service[] = [
     faqs: [
       { q: "What is SAP data cleaning?", a: "SAP data cleaning is the process of identifying and fixing source data quality issues — such as duplicate records, inconsistent formats, missing mandatory fields, and orphaned records — before that data is extracted and loaded into a target SAP environment." },
       { q: "Why is data cleansing important before an SAP migration?", a: "Dirty source data is one of the most common causes of SAP migration delays. Issues that aren't caught before load tend to surface during mock loads or, worse, during cutover, where they are far more expensive to fix." },
-      { q: "What kind of data quality issues does ETLZone typically find?", a: "Common issues include duplicate master records for vendors, customers, or materials, inconsistent date and unit-of-measure formats across source systems, missing values in fields the target SAP system requires, and obsolete or orphaned records." },
-      { q: "Can data cleaning be delivered as a standalone workstream?", a: "Yes. ETLZone can run data cleansing as a standalone engagement ahead of a broader SAP migration program, or as the first phase of a full end-to-end migration workstream." },
-      { q: "How does ETLZone track changes made during data cleansing?", a: "Cleansing rules are documented and signed off before execution. Every correction is applied with an audit trail, so changes remain traceable for compliance and sign-off purposes." },
+      { q: "What kind of data quality issues does Etlzone typically find?", a: "Common issues include duplicate master records for vendors, customers, or materials, inconsistent date and unit-of-measure formats across source systems, missing values in fields the target SAP system requires, and obsolete or orphaned records." },
+      { q: "Can data cleaning be delivered as a standalone workstream?", a: "Yes. Etlzone can run data cleansing as a standalone engagement ahead of a broader SAP migration program, or as the first phase of a full end-to-end migration workstream." },
+      { q: "How does Etlzone track changes made during data cleansing?", a: "Cleansing rules are documented and signed off before execution. Every correction is applied with an audit trail, so changes remain traceable for compliance and sign-off purposes." },
     ],
     riskCallout: {
       icon: "⚠",
@@ -170,7 +170,7 @@ export const services: Service[] = [
       { q: "What is SAP data mapping?", a: "SAP data mapping is the process of defining exactly how each source data field corresponds to its target SAP field, including transformation rules, value conversions, and default logic." },
       { q: "Why does data mapping matter for an SAP migration?", a: "Mapping is where most migration rework gets born or avoided. If field-level mapping isn't documented and signed off before build, the load team ends up making assumptions mid-build." },
       { q: "What does a mapping deliverable look like?", a: "A completed mapping deliverable is a signed-off document showing every source field mapped to its target field, object by object, along with transformation rules and value conversions." },
-      { q: "Can data mapping be delivered separately from the migration build?", a: "Yes. ETLZone can deliver data mapping as a standalone workstream or as the design phase of a full end-to-end migration engagement." },
+      { q: "Can data mapping be delivered separately from the migration build?", a: "Yes. Etlzone can deliver data mapping as a standalone workstream or as the design phase of a full end-to-end migration engagement." },
       { q: "Who signs off on the mapping before build starts?", a: "Mapping is reviewed and signed off with your functional team against agreed business rules before it's locked for build." },
     ],
   },
@@ -207,7 +207,7 @@ export const services: Service[] = [
       { q: "Is a successful data load the same as an accurate one?", a: "No. A load can complete without errors and still contain data that doesn't match the source — for example, due to a transformation rule that produced an unexpected value." },
       { q: "What does source-to-target reconciliation actually check?", a: "Reconciliation checks operate at two levels: record count reconciliation and field-level value checks." },
       { q: "What happens when a discrepancy is found during reconciliation?", a: "Every discrepancy is logged with root-cause notes and routed back to the relevant stage for correction." },
-      { q: "What proof do we get that a migrated object is validated?", a: "ETLZone delivers a reconciliation report confirming the object meets agreed accuracy thresholds." },
+      { q: "What proof do we get that a migrated object is validated?", a: "Etlzone delivers a reconciliation report confirming the object meets agreed accuracy thresholds." },
     ],
   },
   {
@@ -243,7 +243,7 @@ export const services: Service[] = [
       { q: "How many mock loads should run before a real cutover?", a: "There's no fixed number — it depends on object complexity. Most programs run mock loads iteratively until timing stabilizes, followed by one full dress rehearsal." },
       { q: "What is a cutover runbook?", a: "A cutover runbook is a step-by-step, timed document covering every task, owner, and dependency in the go-live sequence." },
       { q: "What causes cutover timelines to slip?", a: "Common causes include object dependencies not identified until a mock load exposed them, data quality issues not caught during cleansing, and untested runbooks." },
-      { q: "Does ETLZone provide execution support during the actual cutover window?", a: "Yes. Beyond runbook design and mock load rehearsal, we provide hands-on execution support during the live cutover window itself." },
+      { q: "Does Etlzone provide execution support during the actual cutover window?", a: "Yes. Beyond runbook design and mock load rehearsal, we provide hands-on execution support during the live cutover window itself." },
     ],
   },
 ];

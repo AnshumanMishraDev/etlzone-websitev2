@@ -1,12 +1,12 @@
-/* Why Us page - detailed reasons SIs choose ETLZone */
+/* Why Us page - detailed reasons SIs choose Etlzone */
 import type { Metadata } from "next";
 import ScrollReveal from "@/components/ScrollReveal";
 import CTABanner from "@/components/CTABanner";
 import FullFooter from "@/components/FullFooter";
 
 export const metadata: Metadata = {
-  title: "Why Choose ETLZone",
-  description: "Why System Integrators bring ETLZone into their SAP migration programs — narrow scope, drop-in delivery, surge capacity, and NDA confidentiality as standard.",
+  title: "Why Choose Etlzone",
+  description: "Why System Integrators bring Etlzone into their SAP migration programs — narrow scope, drop-in delivery, surge capacity, and NDA confidentiality as standard.",
 };
 
 export default function WhyUsPage() {
@@ -14,7 +14,7 @@ export default function WhyUsPage() {
     <>
       <div className="hero-grid">
         <div>
-          <span className="eyebrow">Why SIs Choose ETLZone</span>
+          <span className="eyebrow">Why SIs Choose Etlzone</span>
           <h1 style={{ fontSize: "clamp(28px,4vw,44px)", fontWeight: 800, color: "var(--brand-blue-dark)", lineHeight: 1.18, letterSpacing: -1, marginBottom: 20 }}>
             Built for System Integrators, <span className="highlight">Not for Enterprise End-Clients</span>
           </h1>
@@ -30,8 +30,8 @@ export default function WhyUsPage() {
           <div className="section-head">
             <ScrollReveal>
               <span className="section-eyebrow">Our Difference</span>
-              <h2>Why System Integrators Bring ETLZone Into Their SAP Migration Programs</h2>
-              <p>Four reasons that make ETLZone a drop-in delivery partner rather than another vendor to manage.</p>
+              <h2>Why System Integrators Bring Etlzone Into Their SAP Migration Programs</h2>
+              <p>Four reasons that make Etlzone a drop-in delivery partner rather than another vendor to manage.</p>
             </ScrollReveal>
           </div>
           <div className="why-grid">
