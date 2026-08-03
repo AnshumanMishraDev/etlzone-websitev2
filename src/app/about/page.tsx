@@ -123,8 +123,10 @@ export default function AboutPage() {
           </div>
           <ScrollReveal>
             <div className="leader-card">
-              <div className="leader-avatar">MS</div>
-              <div>
+              <div className="leader-avatar">
+                <img src="/founder.png" alt="Mohammed Samim Ansari" />
+              </div>
+              <div className="leader-info">
                 <h3>Mohammed Samim Ansari</h3>
                 <span className="leader-role">Founder &amp; Principal SAP Migration Architect</span>
                 <p>Samim brings <strong>12+ years of SAP data migration delivery</strong> experience from Accenture and SLB, where he led end-to-end ECC to S/4HANA migration programs across manufacturing, pharma, and automotive sectors. At Accenture, he architected SAP BODS and SAP Migration Cockpit solutions for Global 500 companies, managing complex data conversions and greenfield implementations at scale.</p>
