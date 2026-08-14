@@ -25,7 +25,7 @@ export default function ServicesPage() {
       <section className="hero-simple">
         <span className="eyebrow">Our Services</span>
         <h1>SAP Data Migration Services, <span className="highlight">Delivered as a Specialist Workstream</span></h1>
-        <p className="sub">Six focused SAP data migration disciplines your team can bring in individually or as a full end-to-end workstream — from planning through go-live.</p>
+        <p className="sub">Six focused SAP data migration disciplines your team can bring in individually or as a full end-to-end workstream, from planning through go-live.</p>
       </section>
 
       <section>

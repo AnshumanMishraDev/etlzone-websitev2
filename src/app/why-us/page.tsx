@@ -6,7 +6,7 @@ import FullFooter from "@/components/FullFooter";
 
 export const metadata: Metadata = {
   title: "Why Choose Etlzone",
-  description: "Why System Integrators bring Etlzone into their SAP migration programs — narrow scope, drop-in delivery, surge capacity, and NDA confidentiality as standard.",
+  description: "Why System Integrators bring Etlzone into their SAP migration programs: narrow scope, drop-in delivery, surge capacity, and NDA confidentiality as standard.",
 };
 
 export default function WhyUsPage() {
@@ -36,10 +36,10 @@ export default function WhyUsPage() {
           </div>
           <div className="why-grid">
             {[
-              { num: "01", title: "Narrow Scope, Deep Depth", desc: "We only do SAP data migration. No analytics, no app development, no general BI — so there&apos;s no scope creep and no competing priorities on your project timeline." },
+              { num: "01", title: "Narrow Scope, Deep Depth", desc: "We only do SAP data migration. No analytics, no app development, no general BI, so there's no scope creep and no competing priorities on your project timeline." },
               { num: "02", title: "Drop-In Delivery", desc: "We work inside your PM tooling, your status cadence, your naming conventions. Your client sees your delivery, not ours." },
               { num: "03", title: "Surge Capacity Without Headcount Risk", desc: "Bring us in for a migration phase, release us at go-live. No bench cost between engagements." },
-              { num: "04", title: "NDA &amp; Confidentiality as Standard", desc: "Confidentiality isn&apos;t a negotiation — it&apos;s the default posture for every SAP migration engagement we take on." },
+              { num: "04", title: "NDA & Confidentiality as Standard", desc: "Confidentiality isn't a negotiation; it's the default posture for every SAP migration engagement we take on." },
             ].map((item, i) => (
               <ScrollReveal key={i} className="why-card">
                 <div className="why-num">{item.num}</div>

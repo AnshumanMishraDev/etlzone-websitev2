@@ -48,7 +48,7 @@ export default function ContactForm() {
   return (
     <div className="form-card">
       <h2 id="form">Send Us a Message</h2>
-      <p className="lead">Tell us about the program — SAP version, timeline, and where you need support.</p>
+      <p className="lead">Tell us about the program: SAP version, timeline, and where you need support.</p>
       <form onSubmit={handleSubmit}>
         <div className="form-row">
           <div className="form-group">
@@ -82,7 +82,7 @@ export default function ContactForm() {
         </div>
         <div className="form-group">
           <label htmlFor="message">Message</label>
-          <textarea id="message" name="message" placeholder="Tell us about the program — SAP version, object scope, timeline..." />
+          <textarea id="message" name="message" placeholder="Tell us about the program: SAP version, object scope, timeline..." />
         </div>
         {error && <p style={{ color: "#c94b4b", fontSize: 14, marginBottom: 16 }}>{error}</p>}
         <button type="submit" className="submit-btn" disabled={submitting}>

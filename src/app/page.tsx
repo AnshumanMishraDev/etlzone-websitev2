@@ -14,16 +14,16 @@ const serviceCards = [
 ];
 
 const whyUsItems = [
-  { num: "01", title: "Narrow Scope, Deep Depth", desc: "We only do SAP data migration. No analytics, no app development, no general BI — so there&apos;s no scope creep and no competing priorities on your project timeline." },
+  { num: "01", title: "Narrow Scope, Deep Depth", desc: "We only do SAP data migration. No analytics, no app development, no general BI, so there's no scope creep and no competing priorities on your project timeline." },
   { num: "02", title: "Drop-In Delivery", desc: "We work inside your PM tooling, your status cadence, your naming conventions. Your client sees your delivery, not ours." },
   { num: "03", title: "Surge Capacity Without Headcount Risk", desc: "Bring us in for a migration phase, release us at go-live. No bench cost between engagements." },
-  { num: "04", title: "NDA &amp; Confidentiality as Standard", desc: "Confidentiality isn&apos;t a negotiation — it&apos;s the default posture for every SAP migration engagement we take on." },
+  { num: "04", title: "NDA & Confidentiality as Standard", desc: "Confidentiality isn't a negotiation; it's the default posture for every SAP migration engagement we take on." },
 ];
 
 const engageItems = [
   { title: "Staff Augmentation", desc: "Migration specialists staffed directly into your live SAP project team." },
   { title: "Subcontracted Workstream", desc: "Full ownership of a defined migration workstream, delivered under your program." },
-  { title: "Fixed-Scope Module Delivery", desc: "A specific module delivered end-to-end — e.g., the BODS load layer only." },
+  { title: "Fixed-Scope Module Delivery", desc: "A specific module delivered end-to-end, such as the BODS load layer only." },
 ];
 
 export default function HomePage() {

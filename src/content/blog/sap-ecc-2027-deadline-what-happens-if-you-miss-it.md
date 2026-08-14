@@ -21,7 +21,7 @@ For most organizations, that means the real deadline isn't 2027. It's however ma
 
 ### 1. Regulatory and tax updates slow down or stop
 
-ECC systems depend on regular legal change packs, especially for statutory reporting, tax calculations, and country-specific compliance. Once mainstream support ends, those updates become harder to get and slower to arrive. For finance and tax teams, that's not a technical inconvenience — it's an audit risk.
+ECC systems depend on regular legal change packs, especially for statutory reporting, tax calculations, and country-specific compliance. Once mainstream support ends, those updates become harder to get and slower to arrive. For finance and tax teams, that's not a technical inconvenience; it's an audit risk.
 
 ### 2. Security patching becomes a paid add-on, not a given
 
@@ -29,7 +29,7 @@ Extended maintenance typically covers priority security notes, but the terms and
 
 ### 3. SAP talent gets harder to find
 
-This one is easy to underestimate. As S/4HANA becomes the default, experienced ECC consultants and BASIS specialists become scarcer and more expensive. Organizations that delay migration aren't just paying more for support — they're competing for a shrinking pool of experts who still know the old system well.
+This one is easy to underestimate. As S/4HANA becomes the default, experienced ECC consultants and BASIS specialists become scarcer and more expensive. Organizations that delay migration aren't just paying more for support; they're competing for a shrinking pool of experts who still know the old system well.
 
 ### 4. Your integration partners move on before you do
 
@@ -37,7 +37,7 @@ Third-party tools, middleware and add-ons increasingly build for S/4HANA first. 
 
 ## Why "we'll do it later" gets more expensive every quarter
 
-A late migration isn't just delayed — it's compressed. Teams that start 8 months out instead of 18 months out don't get a smaller project; they get the same project done faster, with less room for the data reconciliation and cutover rehearsal cycles that catch problems before go-live. Compressed timelines are where migrations get expensive, not because the tools cost more, but because rework, weekend cutover failures and post-go-live firefighting cost more than doing it right the first time.
+A late migration isn't just delayed; it's compressed. Teams that start 8 months out instead of 18 months out don't get a smaller project; they get the same project done faster, with less room for the data reconciliation and cutover rehearsal cycles that catch problems before go-live. Compressed timelines are where migrations get expensive, not because the tools cost more, but because rework, weekend cutover failures and post-go-live firefighting cost more than doing it right the first time.
 
 We've seen and know this pattern across projects: the migrations that go smoothly are almost never the ones that started with the most time pressure. They're the ones where master data cleansing, reconciliation checkpoints, and mock cutover runs happened early enough to catch issues quietly, instead of during a live cutover weekend. Related read: our [master data cleansing checklist](/blog/ecc-to-s4hana-migration-checklist-12-months-before-go-live) covers this in detail.
 

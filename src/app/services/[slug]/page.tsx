@@ -88,7 +88,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
             <ScrollReveal>
               <div className="risk-callout">
                 <div className="risk-icon">{service.riskCallout.icon}</div>
-                <p><strong>Dirty data is the #1 cause of migration timeline slippage</strong> — not scope, not tooling, not resourcing. Catching data quality issues at the cleansing stage is far cheaper than catching them during a failed mock load, or worse, during cutover weekend.</p>
+                <p><strong>Dirty data is the #1 cause of migration timeline slippage</strong>, not scope, not tooling, not resourcing. Catching data quality issues at the cleansing stage is far cheaper than catching them during a failed mock load, or worse, during cutover weekend.</p>
               </div>
             </ScrollReveal>
           </div>
@@ -102,7 +102,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
             <div className="section-head">
               <ScrollReveal>
                 <span className="section-eyebrow">{service.pathGrid.eyebrow}</span>
-                <h2>Brownfield or Greenfield — We Scope to Your Approach</h2>
+                <h2>Brownfield or Greenfield: We Scope to Your Approach</h2>
                 <p>The right migration path changes what data work is required. We adapt our workstream to whichever your program has already committed to.</p>
               </ScrollReveal>
             </div>
@@ -150,7 +150,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
           <div className="mid-cta">
             <ScrollReveal>
               <h2>Scoping a Migration Workstream?</h2>
-              <p>Tell us the object scope and timeline — we&apos;ll tell you exactly how we&apos;d plug in.</p>
+              <p>Tell us the object scope and timeline, and we&apos;ll tell you exactly how we&apos;d plug in.</p>
               <a href="/contact" className="btn-primary">Schedule a Delivery Conversation</a>
             </ScrollReveal>
           </div>

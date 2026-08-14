@@ -37,7 +37,7 @@ export default function AboutPage() {
           <ScrollReveal>
             <div className="intro-box">
               <p><strong>Etlzone Solutions LLP</strong> is a Mumbai-based SAP data migration services partner specializing in ECC to S/4HANA migrations, SAP BODS, and data migration cockpit configuration.</p>
-              <p>We work exclusively as a subcontract and staffing partner to SAP System Integrators — we don&apos;t compete for direct enterprise relationships or white-label our brand into your client engagements. Our <strong>50+ SAP-certified specialists</strong> bring deep expertise in ECC to S/4HANA conversions, greenfield implementations, and complex data migrations.</p>
+              <p>We work exclusively as a subcontract and staffing partner to SAP System Integrators; we don&apos;t compete for direct enterprise relationships or white-label our brand into your client engagements. Our <strong>50+ SAP-certified specialists</strong> bring deep expertise in ECC to S/4HANA conversions, greenfield implementations, and complex data migrations.</p>
               <p>Based in Mumbai with UTC-friendly operations, we embed seamlessly into your programs with focused delivery and no competing priorities.</p>
             </div>
           </ScrollReveal>
@@ -81,7 +81,7 @@ export default function AboutPage() {
               </div>
             </ScrollReveal>
           </div>
-          <p className="exclusion-note">We made this call because SI partners don&apos;t need another generalist vendor — they need a migration specialist who shows up, owns the scoped workstream, and leaves no loose ends at go-live.</p>
+          <p className="exclusion-note">We made this call because SI partners don&apos;t need another generalist vendor; they need a migration specialist who shows up, owns the scoped workstream, and leaves no loose ends at go-live.</p>
         </div>
       </section>
 
@@ -97,9 +97,9 @@ export default function AboutPage() {
           </div>
           <div className="exclusion-grid">
             {[
-              { title: "General SAP Consulting", desc: "No functional configuration, no broader SAP advisory work — we stay in the data migration lane exclusively." },
-              { title: "Analytics &amp; BI", desc: "No Tableau, Power BI, or dashboarding — that chapter is completely closed to avoid scope overlap." },
-              { title: "Application Development", desc: "No custom app builds. We don&apos;t compete for adjacent scope on your program or with other delivery partners." },
+              { title: "General SAP Consulting", desc: "No functional configuration, no broader SAP advisory work; we stay in the data migration lane exclusively." },
+              { title: "Analytics & BI", desc: "No Tableau, Power BI, or dashboarding; that chapter is completely closed to avoid scope overlap." },
+              { title: "Application Development", desc: "No custom app builds. We don't compete for adjacent scope on your program or with other delivery partners." },
             ].map((item, i) => (
               <ScrollReveal key={i} className="exclusion-card">
                 <div className="x-icon">✕</div>

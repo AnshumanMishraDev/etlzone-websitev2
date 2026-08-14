@@ -1,4 +1,4 @@
-/* Results page - track record, testimonials, engagement snapshots */
+/* Results page - track record, engagement snapshots */
 import type { Metadata } from "next";
 import ScrollReveal from "@/components/ScrollReveal";
 import CTABanner from "@/components/CTABanner";
@@ -6,7 +6,7 @@ import FullFooter from "@/components/FullFooter";
 
 export const metadata: Metadata = {
   title: "Results & Track Record",
-  description: "Etlzone's track record delivering SAP data migration and S/4HANA conversion programs for System Integrators — 12+ migrations delivered with zero failed go-lives.",
+  description: "Etlzone's track record delivering SAP data migration and S/4HANA conversion programs for System Integrators: 12+ migrations delivered with zero failed go-lives.",
 };
 
 export default function ResultsPage() {
@@ -43,31 +43,6 @@ export default function ResultsPage() {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section>
-        <div className="container">
-          <div className="section-head">
-            <ScrollReveal>
-              <span className="section-eyebrow">In Their Words</span>
-              <h2>Named Client &amp; Partner Feedback</h2>
-              <p>Shared with explicit permission from the SI or client named below.</p>
-            </ScrollReveal>
-          </div>
-          <div className="quote-grid">
-            {[1, 2].map((i) => (
-              <ScrollReveal key={i} className="quote-card">
-                <span style={{ fontSize: 46, color: "rgba(20,80,224,0.15)", fontWeight: 900, lineHeight: 1, marginBottom: 12, display: "block", fontFamily: "Georgia,serif" }}>&quot;</span>
-                <p style={{ fontSize: 15.5, color: "var(--text-dark)", fontStyle: "italic", marginBottom: 24 }}>[Insert approved client/partner quote here.]</p>
-                <div className="quote-attribution">
-                  <div className="quote-avatar">??</div>
-                  <div><h4>[Name]</h4><span>[Title, Company]</span></div>
-                </div>
-              </ScrollReveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Engagement results by category */}
       <section className="bg-light">
         <div className="container">
@@ -80,17 +55,17 @@ export default function ResultsPage() {
           </div>
 
           {[
-            { title: "SAP Data Migration &amp; S/4HANA Migration", snapshots: [
+            { title: "SAP Data Migration & S/4HANA Migration", snapshots: [
               { tag: "Manufacturing", desc: "Full ECC to S/4HANA migration delivered as a subcontracted partner, covering finance and materials management." },
               { tag: "Logistics", desc: "Brought in mid-program to take ownership of a stalled migration workstream, rebuilt the object mapping and load sequence." },
             ]},
-            { title: "Data Cleaning &amp; Data Mapping", snapshots: [
+            { title: "Data Cleaning & Data Mapping", snapshots: [
               { tag: "Retail", desc: "Standalone data cleansing workstream resolving duplicate vendor and material records before extraction." },
               { tag: "Industrial Equipment", desc: "Source-to-target mapping documentation delivered for a multi-object migration scope." },
             ]},
-            { title: "Validation, Testing &amp; Cutover", snapshots: [
+            { title: "Validation, Testing & Cutover", snapshots: [
               { tag: "Pharmaceuticals", desc: "Post-load reconciliation across finance and sales objects, tracking discrepancies to resolution." },
-              { tag: "Energy &amp; Utilities", desc: "Cutover rehearsal and go-live execution support for a multi-phase migration program." },
+              { tag: "Energy & Utilities", desc: "Cutover rehearsal and go-live execution support for a multi-phase migration program." },
             ]},
           ].map((group, gi) => (
             <div key={gi} className="service-group">
@@ -110,7 +85,7 @@ export default function ResultsPage() {
 
           <div className="nda-callout">
             <div className="nda-icon">🔒</div>
-            <p><strong>Most of our engagements are confidential by contract.</strong> We deliver under our SI partners&apos; brand, not our own — so client and program names are withheld unless explicit permission has been given.</p>
+            <p><strong>Most of our engagements are confidential by contract.</strong> We deliver under our SI partners&apos; brand, not our own, so client and program names are withheld unless explicit permission has been given.</p>
           </div>
         </div>
       </section>

@@ -6,7 +6,7 @@ import ContactForm from "./ContactForm";
 
 export const metadata: Metadata = {
   title: "Contact Us",
-  description: "Get in touch with Etlzone Solutions LLP to scope an SAP data migration workstream — staff augmentation, subcontracted delivery, or fixed-scope module support.",
+  description: "Get in touch with Etlzone Solutions LLP to scope an SAP data migration workstream: staff augmentation, subcontracted delivery, or fixed-scope module support.",
 };
 
 export default function ContactPage() {
@@ -35,7 +35,7 @@ export default function ContactPage() {
           <h1 style={{ fontSize: "clamp(28px,4vw,44px)", fontWeight: 800, color: "var(--brand-blue-dark)", lineHeight: 1.18, letterSpacing: -1, marginBottom: 20 }}>
             Scoping an SAP Migration Program? <span className="highlight">Let&apos;s Talk.</span>
           </h1>
-          <p className="sub" style={{ marginBottom: 0 }}>Tell us the object scope, timeline, and where you need delivery support — we&apos;ll get back to you with how Etlzone would plug in.</p>
+          <p className="sub" style={{ marginBottom: 0 }}>Tell us the object scope, timeline, and where you need delivery support, and we&apos;ll get back to you with how Etlzone would plug in.</p>
         </div>
         <div className="hero-img-wrap">
           <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?fm=jpg&q=75&w=1200&auto=format&fit=crop" alt="Business meeting" />

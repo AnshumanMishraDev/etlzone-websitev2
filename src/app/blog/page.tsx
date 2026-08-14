@@ -16,7 +16,7 @@ export default function BlogPage() {
           <h1 style={{ fontSize: "clamp(28px,4vw,44px)", fontWeight: 800, color: "var(--brand-blue-dark)", lineHeight: 1.18, letterSpacing: -1, marginBottom: 20 }}>
             SAP Migration Insights <span className="highlight">for Delivery Teams</span>
           </h1>
-          <p className="sub">Practitioner-level notes on SAP data migration, S/4HANA conversion, and cutover planning — written for the people scoping and running these programs.</p>
+          <p className="sub">Practitioner-level notes on SAP data migration, S/4HANA conversion, and cutover planning, written for the people scoping and running these programs.</p>
         </div>
         <div className="hero-img-wrap">
           <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?fm=jpg&q=75&w=1200&auto=format&fit=crop" alt="Blog" />
@@ -31,7 +31,7 @@ export default function BlogPage() {
           </div>
 
           {posts.length === 0 ? (
-            <p style={{ textAlign: "center", color: "var(--text-muted)" }}>No posts yet — add a markdown file to src/content/blog/ to publish.</p>
+            <p style={{ textAlign: "center", color: "var(--text-muted)" }}>No posts yet. Add a markdown file to src/content/blog/ to publish.</p>
           ) : (
             <div className="blog-grid">
               {posts.map((post, i) => (

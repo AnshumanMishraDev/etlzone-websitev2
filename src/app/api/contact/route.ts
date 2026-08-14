@@ -28,14 +28,14 @@ export async function POST(request: Request) {
     await resend.emails.send({
       from: fromAddr,
       to: [toAddr],
-      subject: `New Contact Form Submission from ${fullname} — ${company}`,
+      subject: `New Contact Form Submission from ${fullname} (${company})`,
       html: `
         <h2>New Contact Form Submission</h2>
         <table style="border-collapse:collapse;width:100%">
           <tr><td style="padding:8px;font-weight:700;border:1px solid #ddd">Name</td><td style="padding:8px;border:1px solid #ddd">${fullname}</td></tr>
           <tr><td style="padding:8px;font-weight:700;border:1px solid #ddd">Company</td><td style="padding:8px;border:1px solid #ddd">${company}</td></tr>
-          <tr><td style="padding:8px;font-weight:700;border:1px solid #ddd">Role</td><td style="padding:8px;border:1px solid #ddd">${role || "—"}</td></tr>
-          <tr><td style="padding:8px;font-weight:700;border:1px solid #ddd">Engagement</td><td style="padding:8px;border:1px solid #ddd">${engagement || "—"}</td></tr>
+          <tr><td style="padding:8px;font-weight:700;border:1px solid #ddd">Role</td><td style="padding:8px;border:1px solid #ddd">${role || ""}</td></tr>
+          <tr><td style="padding:8px;font-weight:700;border:1px solid #ddd">Engagement</td><td style="padding:8px;border:1px solid #ddd">${engagement || ""}</td></tr>
           <tr><td style="padding:8px;font-weight:700;border:1px solid #ddd">Email</td><td style="padding:8px;border:1px solid #ddd">${email}</td></tr>
         </table>
         <h3>Message</h3>

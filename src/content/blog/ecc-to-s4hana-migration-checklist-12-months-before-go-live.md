@@ -7,7 +7,7 @@ date: "2026-07-20"
 readTime: "6 min read"
 ---
 
-Twelve months sounds like a lot of runway. In SAP migration terms, it's tight but workable, provided the right things happen in the right order. Most migration delays don't come from any single dramatic failure — they come from steps skipped early that turn into blockers later.
+Twelve months sounds like a lot of runway. In SAP migration terms, it's tight but workable, provided the right things happen in the right order. Most migration delays don't come from any single dramatic failure; they come from steps skipped early that turn into blockers later.
 
 This checklist lays out what a well-sequenced 12-month runway actually looks like, broken into phases. If you're still deciding whether 12 months is realistic for your organization, our piece on the [ECC 2027 deadline](/blog/sap-ecc-2027-deadline-what-happens-if-you-miss-it) walks through the timeline math.
 
