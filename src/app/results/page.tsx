@@ -43,6 +43,29 @@ export default function ResultsPage() {
         </div>
       </section>
 
+      {/* Testimonials */}
+      <section>
+        <div className="container">
+          <div className="section-head">
+            <ScrollReveal>
+              <span className="section-eyebrow">In Their Words</span>
+              <h2>Client &amp; Partner Feedback</h2>
+              <p>Shared with permission from an SI partner we delivered a data migration workstream for.</p>
+            </ScrollReveal>
+          </div>
+          <div style={{ maxWidth: 680, margin: "0 auto" }}>
+            <ScrollReveal className="quote-card">
+              <span style={{ fontSize: 46, color: "rgba(20,80,224,0.15)", fontWeight: 900, lineHeight: 1, marginBottom: 12, display: "block", fontFamily: "Georgia,serif" }}>&quot;</span>
+              <p style={{ fontSize: 15.5, color: "var(--text-dark)", fontStyle: "italic", marginBottom: 24 }}>Samim led the data migration workstream on our SAP project and consistently delivered clean, reconciled data on schedule. He caught data issues before they became cutover problems, communicated clearly at every stage. Highly recommend him for any SAP migration work.</p>
+              <div className="quote-attribution">
+                <div className="quote-avatar">BK</div>
+                <div><h4>Bhanu Murthy Kota</h4><span>SAP Basis SME, ADILABS Consulting Services Pvt. Ltd.</span></div>
+              </div>
+            </ScrollReveal>
+          </div>
+        </div>
+      </section>
+
       {/* Engagement results by category */}
       <section className="bg-light">
         <div className="container">
