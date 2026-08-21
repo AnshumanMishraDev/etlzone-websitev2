@@ -574,6 +574,48 @@ table tr:nth-child(even) { background: var(--bg-light); }
 .quote-card { background: #fff; border-radius: 20px; padding: 36px; box-shadow: 0 10px 30px rgba(20, 80, 224, 0.1); border-top: 4px solid var(--brand-yellow); position: relative; }
 .quote-attribution { display: flex; align-items: center; gap: 14px; padding-top: 18px; border-top: 1px solid rgba(20, 80, 224, 0.08); }
 .quote-avatar { width: 44px; height: 44px; border-radius: 12px; background: linear-gradient(135deg, var(--brand-blue), var(--brand-blue-light)); color: #fff; font-weight: 800; display: flex; align-items: center; justify-content: center; font-size: 15px; flex-shrink: 0; }
+
+/* Testimonial Carousel - Horizontal Scroll */
+.testimonial-carousel-section { margin-bottom: 40px; }
+.testimonial-carousel-wrapper { position: relative; max-width: 1050px; margin: 0 auto; padding: 0 60px; }
+.testimonial-carousel-track { display: flex; gap: 28px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; padding: 8px 4px; scrollbar-width: none; -ms-overflow-style: none; }
+.testimonial-carousel-track::-webkit-scrollbar { display: none; }
+.testimonial-card { background: #fff; border-radius: 20px; padding: 36px; box-shadow: 0 10px 30px rgba(20, 80, 224, 0.1); border-top: 4px solid var(--brand-yellow); position: relative; overflow: hidden; transition: max-height 0.5s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.3s ease; scroll-snap-align: start; flex-shrink: 0; }
+.testimonial-card:hover { box-shadow: 0 16px 40px rgba(20, 80, 224, 0.15); }
+.testimonial-card-inner { display: flex; flex-direction: column; height: 100%; }
+.quote-mark { font-size: 46px; color: rgba(20, 80, 224, 0.15); font-weight: 900; line-height: 1; margin-bottom: 12px; font-family: Georgia, serif; flex-shrink: 0; }
+.testimonial-text { font-size: 15.5px; color: var(--text-dark); font-style: italic; line-height: 1.7; margin-bottom: 24px; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 9; -webkit-box-orient: vertical; flex-shrink: 1; }
+.testimonial-card.expanded .testimonial-text { -webkit-line-clamp: unset; overflow: visible; }
+.testimonial-attribution { display: flex; align-items: center; gap: 14px; padding-top: 18px; border-top: 1px solid rgba(20, 80, 224, 0.08); margin-top: auto; flex-shrink: 0; }
+.read-full-btn { background: none; border: none; color: var(--brand-blue); font-weight: 600; font-size: 14px; cursor: pointer; padding: 8px 0; margin-top: 12px; align-self: flex-start; transition: color 0.2s ease; }
+.read-full-btn:hover { color: var(--brand-blue-light); text-decoration: underline; }
+
+.carousel-btn { position: absolute; top: 50%; transform: translateY(-50%); width: 48px; height: 48px; border-radius: 50%; background: #fff; border: 1px solid rgba(20, 80, 224, 0.15); box-shadow: 0 4px 16px rgba(15, 23, 42, 0.08); display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.2s ease; z-index: 10; color: var(--brand-blue); }
+.carousel-btn:hover:not(:disabled) { background: var(--brand-blue); color: #fff; border-color: var(--brand-blue); box-shadow: 0 8px 24px rgba(20, 80, 224, 0.25); }
+.carousel-btn:disabled { opacity: 0.3; cursor: not-allowed; }
+.carousel-btn--prev { left: 0; }
+.carousel-btn--next { right: 0; }
+.carousel-btn svg { width: 20px; height: 20px; }
+
+@media (max-width: 768px) {
+  .testimonial-carousel-wrapper { padding: 0 16px; }
+  .testimonial-card { width: 340px; padding: 28px; }
+  .testimonial-text { font-size: 14.5px; -webkit-line-clamp: 8; }
+  .carousel-btn { width: 40px; height: 40px; }
+  .carousel-btn--prev { left: -8px; }
+  .carousel-btn--next { right: -8px; }
+}
+
+@media (max-width: 480px) {
+  .testimonial-carousel-wrapper { padding: 0; }
+  .carousel-btn { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .testimonial-card { transition: max-height 0.2s ease, box-shadow 0.2s ease; }
+  .testimonial-carousel-track { scroll-behavior: auto; }
+}
+
 .nda-callout { max-width: 900px; margin: 60px auto 0; background: var(--bg-light); border-radius: 18px; padding: 32px 36px; display: flex; gap: 20px; align-items: flex-start; }
 
 /* Results snapshot cards */
