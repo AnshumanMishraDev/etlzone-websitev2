@@ -599,16 +599,22 @@ table tr:nth-child(even) { background: var(--bg-light); }
 
 @media (max-width: 768px) {
   .testimonial-carousel-wrapper { padding: 0 16px; }
-  .testimonial-card { width: 340px; padding: 28px; }
-  .testimonial-text { font-size: 14.5px; -webkit-line-clamp: 8; }
+  .testimonial-card { width: calc(100% - 32px); max-width: 440px; padding: 24px; }
+  .testimonial-text { font-size: 14.5px; -webkit-line-clamp: 7; }
   .carousel-btn { width: 40px; height: 40px; }
   .carousel-btn--prev { left: -8px; }
   .carousel-btn--next { right: -8px; }
 }
 
 @media (max-width: 480px) {
-  .testimonial-carousel-wrapper { padding: 0; }
+  .testimonial-carousel-wrapper { padding: 0 12px; }
+  .testimonial-card { width: calc(100% - 24px); padding: 20px; }
   .carousel-btn { display: none; }
+  .testimonial-text { font-size: 14px; -webkit-line-clamp: 6; }
+  .quote-mark { font-size: 40px; margin-bottom: 8px; }
+  .testimonial-attribution { gap: 10px; padding-top: 12px; }
+  .quote-avatar { width: 36px; height: 36px; font-size: 13px; }
+  .read-full-btn { font-size: 13px; padding: 6px 0; margin-top: 8px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
