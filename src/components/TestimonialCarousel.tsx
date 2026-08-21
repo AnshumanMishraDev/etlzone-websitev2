@@ -18,9 +18,9 @@ const testimonials: Testimonial[] = [
     initials: "KA",
   },
   {
-    quote: "We had the pleasure of partnering with ETLZONE Solutions for our data migration project, and the experience exceeded our expectations. Their team demonstrated exceptional expertise, meticulous planning, and a strong commitment to delivering a seamless migration with minimal business disruption. The project was executed on time, with a high level of accuracy and data integrity. Their proactive communication, attention to detail, and ability to address challenges efficiently gave us complete confidence throughout the process. We were particularly impressed by their structured approach, technical competence, and dedication to ensuring a successful outcome. I highly recommend ETLZONE Solutions to any organization looking for a reliable and highly skilled data migration partner.",
+    quote: "Samim led our Data Migration project with strong technical expertise and excellent planning, ensuring a smooth transition with minimal business disruption. His proactive approach meant challenges were identified and resolved quickly, giving us confidence throughout. I highly recommend Samim to any organization looking for a reliable SAP Data Migration professional.",
     author: "Naina Patel",
-    role: "Manager, Commercial Centre of Excellence, Sony Entertainment Television",
+    role: "Manager Commercial Centre of Excellence, Sony Entertainment Television",
     initials: "NP",
   },
   {
