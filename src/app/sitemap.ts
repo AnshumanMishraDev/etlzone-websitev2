@@ -13,6 +13,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/partner",
     "/contact",
     "/blog",
+    "/blog/ecc-to-s4hana-migration-checklist-12-months-before-go-live",
+    "/blog/sap-ecc-2027-deadline-what-happens-if-you-miss-it",
   ];
 
   const serviceSlugs = [

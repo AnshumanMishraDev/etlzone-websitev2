@@ -25,7 +25,7 @@ export default function ContactPage() {
             telephone: "+91-98678-70005",
             address: { "@type": "PostalAddress", streetAddress: "Kandivali (W)", addressLocality: "Mumbai", addressRegion: "Maharashtra", addressCountry: "IN" },
             areaServed: "Worldwide",
-            url: "https://etlzone.com/contact.html",
+            url: "https://etlzone.com/contact",
           }),
         }}
       />
