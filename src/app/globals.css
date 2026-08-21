@@ -585,10 +585,9 @@ table tr:nth-child(even) { background: var(--bg-light); }
   .testimonial-carousel-section { overflow-x: hidden; }
   .testimonial-carousel-wrapper { max-width: none; padding: 0; }
   .testimonial-carousel-track { 
-    padding: 0 50vw; 
+    padding: 0; 
     gap: 0; 
     scroll-snap-type: x mandatory;
-    scroll-padding: 0 50vw;
   }
   .testimonial-card { 
     width: 100vw; 
@@ -596,7 +595,7 @@ table tr:nth-child(even) { background: var(--bg-light); }
     padding: 24px 20px; 
     box-sizing: border-box; 
     border-radius: 0; 
-    scroll-snap-align: center;
+    scroll-snap-align: start;
     flex-shrink: 0;
   }
   .testimonial-text { font-size: 14.5px; -webkit-line-clamp: 7; word-break: break-word; overflow-wrap: anywhere; }
@@ -607,10 +606,9 @@ table tr:nth-child(even) { background: var(--bg-light); }
   .testimonial-carousel-section { overflow-x: hidden; }
   .testimonial-carousel-wrapper { max-width: none; padding: 0; }
   .testimonial-carousel-track { 
-    padding: 0 50vw; 
+    padding: 0; 
     gap: 0; 
     scroll-snap-type: x mandatory;
-    scroll-padding: 0 50vw;
   }
   .testimonial-card { 
     width: 100vw; 
@@ -618,7 +616,7 @@ table tr:nth-child(even) { background: var(--bg-light); }
     padding: 20px 16px; 
     box-sizing: border-box; 
     border-radius: 0; 
-    scroll-snap-align: center;
+    scroll-snap-align: start;
     flex-shrink: 0;
   }
   .carousel-btn { display: none !important; }
