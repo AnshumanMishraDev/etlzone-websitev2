@@ -592,13 +592,13 @@ table tr:nth-child(even) { background: var(--bg-light); }
   .testimonial-card { 
     width: 88vw; 
     max-width: 88vw; 
-    padding: 24px 0; 
+    padding: 16px 0; 
     box-sizing: border-box; 
     border-radius: 20px; 
     scroll-snap-align: center;
     flex-shrink: 0;
   }
-  .testimonial-text { font-size: 14.5px; -webkit-line-clamp: 7; word-break: break-word; overflow-wrap: anywhere; }
+  .testimonial-text { font-size: 14.5px; -webkit-line-clamp: 8; word-break: break-word; overflow-wrap: anywhere; }
   .carousel-btn { display: none !important; }
 }
 
@@ -613,14 +613,14 @@ table tr:nth-child(even) { background: var(--bg-light); }
   .testimonial-card { 
     width: 88vw; 
     max-width: 88vw; 
-    padding: 20px 0; 
+    padding: 14px 0; 
     box-sizing: border-box; 
     border-radius: 20px; 
     scroll-snap-align: center;
     flex-shrink: 0;
   }
   .carousel-btn { display: none !important; }
-  .testimonial-text { font-size: 14px; -webkit-line-clamp: 6; word-break: break-word; overflow-wrap: anywhere; }
+  .testimonial-text { font-size: 14px; -webkit-line-clamp: 7; word-break: break-word; overflow-wrap: anywhere; }
   .quote-mark { font-size: 40px; margin-bottom: 8px; }
   .testimonial-attribution { gap: 10px; padding-top: 12px; }
   .quote-avatar { width: 36px; height: 36px; font-size: 13px; }
