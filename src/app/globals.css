@@ -590,8 +590,8 @@ table tr:nth-child(even) { background: var(--bg-light); }
     scroll-snap-type: x mandatory;
   }
   .testimonial-card { 
-    width: 92vw; 
-    max-width: 92vw; 
+    width: 88vw; 
+    max-width: 88vw; 
     padding: 24px 0; 
     box-sizing: border-box; 
     border-radius: 20px; 
@@ -611,8 +611,8 @@ table tr:nth-child(even) { background: var(--bg-light); }
     scroll-snap-type: x mandatory;
   }
   .testimonial-card { 
-    width: 92vw; 
-    max-width: 92vw; 
+    width: 88vw; 
+    max-width: 88vw; 
     padding: 20px 0; 
     box-sizing: border-box; 
     border-radius: 20px; 
